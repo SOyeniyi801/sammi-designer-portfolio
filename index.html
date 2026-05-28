@@ -1,12 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Sammi Oyeniyi Product Designer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sammi Oyeniyi — UX Designer</title>
+  <meta name="description" content="UX designer with a technical foundation. I find the gaps real users fall into — and design the fix.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Sammi the designer</h1>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a href="index.html" class="nav-logo">Sammi Oyeniyi</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#writing">Writing</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="resume.pdf" class="nav-resume" download>Resume <span class="nav-resume-icon">↓</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Available for work
+        </div>
+        <h1>I find the gaps real users fall into, and design the fix.</h1>
+        <p class="hero-sub">UX designer with a technical foundation. 6+ years in enterprise SaaS means I've lived inside user frustration firsthand. Now I turn that into better products.</p>
+        <a href="#work" class="btn-primary">View my work</a>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar-ring">
+          <!-- Replace the initials div below with your <img> tag when ready -->
+          <!-- <img src="avatar.png" alt="Sammi Oyeniyi" class="avatar-img"> -->
+          <div class="avatar-placeholder">S</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="about-inner">
+        <p class="eyebrow">About</p>
+        <h2>Support engineer turned UX designer</h2>
+        <div class="about-body">
+          <p>I spent 6+ years in enterprise SaaS support — at Unqork, Code Climate, and Blink Health — which means I've spent thousands of hours inside the exact moments where products fail users. I know what breaks, what confuses people, and where the UX quietly lets everyone down. That's where my design instincts come from.</p>
+          <p>I started designing on the side, then freelancing, then going all in. My approach is to find real gaps in existing products — things users are already working around — and design what the fix could look like. I work in Figma, build in HTML/CSS/JS, and I'm currently completing the Google UX Design Certificate.</p>
+          <p>I'm based in Atlanta, GA and looking for remote UX or product design roles where I can bring both the design thinking and the technical context.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="work" id="work">
+      <div class="section-inner">
+        <p class="eyebrow">Selected work</p>
+        <h2>Product thinking in the wild</h2>
+        <div class="work-grid">
+
+          <a href="case-study-wttj.html" class="work-card">
+            <div class="work-card-thumb wttj">
+              <span class="thumb-label">Welcome to the Jungle</span>
+            </div>
+            <div class="work-card-body">
+              <h3>Fixing the job tracker that forgets you</h3>
+              <p>The "Move" feature on WTTJ loses crucial application context. Here's the redesign that got the company's attention.</p>
+              <div class="tags">
+                <span class="tag">Feature design</span>
+                <span class="tag">UX research</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="case-study-instagram.html" class="work-card">
+            <div class="work-card-thumb instagram">
+              <span class="thumb-label">Instagram</span>
+            </div>
+            <div class="work-card-body">
+              <h3>Close Friends, but for your actual life</h3>
+              <p>Multiple close friends lists so you stop oversharing — or not posting at all.</p>
+              <div class="tags">
+                <span class="tag">Feature design</span>
+                <span class="tag">Mobile</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="case-study-hinge.html" class="work-card">
+            <div class="work-card-thumb hinge">
+              <span class="thumb-label">Hinge</span>
+            </div>
+            <div class="work-card-body">
+              <h3>When filters fail single parents</h3>
+              <p>Hinge reduces family dynamics to a yes/no. Single parents deserve a more honest way to show up.</p>
+              <div class="tags">
+                <span class="tag">Feature design</span>
+                <span class="tag">UX research</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WRITING -->
+    <section class="writing" id="writing">
+      <div class="section-inner">
+        <p class="eyebrow">Writing</p>
+        <h2>Design thinking out loud</h2>
+        <div class="writing-grid">
+
+          <a href="https://sammithedev.substack.com/p/uber-doesnt-pay-driversits-ux-does" target="_blank" rel="noopener" class="writing-card">
+            <p class="writing-label">UX critique</p>
+            <h3>Uber doesn't pay drivers — its UX does</h3>
+            <p>How tip architecture and hidden totals keep drivers working for less than they think.</p>
+            <span class="writing-link">Read on Substack →</span>
+          </a>
+
+          <a href="https://sammithedev.substack.com/p/welcome-to-the-jungle-is-great-for" target="_blank" rel="noopener" class="writing-card">
+            <p class="writing-label">UX critique</p>
+            <h3>WTTJ is great for job hunting — except this one thing</h3>
+            <p>The original post that got a company's attention. The "Move" feature, explained.</p>
+            <span class="writing-link">Read on Substack →</span>
+          </a>
+
+          <a href="https://sammithedev.substack.com" target="_blank" rel="noopener" class="writing-card">
+            <p class="writing-label">Career</p>
+            <h3>Why I chose contracts over a permanent job</h3>
+            <p>Two years of unemployment taught me what proximity to designers is actually worth.</p>
+            <span class="writing-link">Read on Substack →</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="experience">
+      <div class="section-inner">
+        <p class="eyebrow">Experience</p>
+        <h2>Where I've been</h2>
+        <ul class="exp-list">
+          <li class="exp-row">
+            <div>
+              <p class="exp-role">Web Content Author / Designer</p>
+              <p class="exp-company">Bose</p>
+            </div>
+            <span class="exp-date">Nov 2025 – Present</span>
+          </li>
+          <li class="exp-row">
+            <div>
+              <p class="exp-role">Freelance UX Designer & Developer</p>
+              <p class="exp-company">Self-employed</p>
+            </div>
+            <span class="exp-date">Jun 2024 – Present</span>
+          </li>
+          <li class="exp-row">
+            <div>
+              <p class="exp-role">Applications Engineer</p>
+              <p class="exp-company">Auxo Solutions</p>
+            </div>
+            <span class="exp-date">Aug 2023 – Feb 2024</span>
+          </li>
+          <li class="exp-row">
+            <div>
+              <p class="exp-role">Software Support Engineer</p>
+              <p class="exp-company">Code Climate</p>
+            </div>
+            <span class="exp-date">Jan 2022 – Aug 2023</span>
+          </li>
+          <li class="exp-row">
+            <div>
+              <p class="exp-role">Production Support Engineer</p>
+              <p class="exp-company">Unqork</p>
+            </div>
+            <span class="exp-date">Dec 2019 – Jan 2022</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="section-inner">
+        <div class="contact-card">
+          <div class="contact-text">
+            <h2>Let's work together</h2>
+            <p>Open to full-time remote UX and product design roles. Feel free to reach out directly.</p>
+            <a href="mailto:hireme.soyeniyi@gmail.com" class="contact-email">hireme.soyeniyi@gmail.com</a>
+          </div>
+          <div class="contact-actions">
+            <a href="mailto:hireme.soyeniyi@gmail.com" class="btn-light">Send an email</a>
+            <a href="resume.pdf" class="btn-outline-light" download>Download resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Designed & built by Sammi Oyeniyi</p>
+    <div class="footer-links">
+      <a href="https://github.com/sammithedev" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/samoyeniyi" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://sammithedev.substack.com" target="_blank" rel="noopener">Substack</a>
+    </div>
+  </footer>
+
 </body>
 </html>
