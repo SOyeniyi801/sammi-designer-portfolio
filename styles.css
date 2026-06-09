@@ -88,6 +88,10 @@ h1, h2, h3 {
   color: var(--charcoal);
 }
 
+.nav-logo span {
+  color:var(--mid) ;
+}
+
 .nav-links {
   display: flex;
   gap: 36px;
@@ -132,6 +136,7 @@ h1, h2, h3 {
   position: sticky;
   top: 0;
   z-index: 1;
+  max-height: 800px;
 }
 
 /* Each section slides up over the previous with rounded top corners */
@@ -1406,6 +1411,10 @@ h1, h2, h3 {
   font-size: 14px;
   font-weight: 500;
   color: var(--charcoal);
+}
+
+.resume-text {
+  font-size: 12px;
 }
 
 .resume-role-co {
