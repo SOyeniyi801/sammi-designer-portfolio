@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study — Sammi Oyeniyi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="cs-page">
+
+  <header class="nav">
+    <a href="index.html" class="nav-logo">Sammi Oyeniyi</a>
+    <ul class="nav-links">
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#bose">Bose</a></li>
+      <li><a href="index.html#thinking">Writing</a></li>
+      <li><a href="index.html#beyond">Beyond</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="resume.pdf" class="nav-resume" download>Resume ↓</a></li>
+    </ul>
+    <div class="nav-mobile-controls">
+      <a href="resume.pdf" class="nav-resume nav-resume--mobile" download>Resume ↓</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-menu-inner">
+      <a href="index.html#work"     class="mobile-link" onclick="closeMenu()">Work</a>
+      <a href="index.html#bose"     class="mobile-link" onclick="closeMenu()">Bose</a>
+      <a href="index.html#thinking" class="mobile-link" onclick="closeMenu()">Writing</a>
+      <a href="index.html#beyond"   class="mobile-link" onclick="closeMenu()">Beyond</a>
+      <a href="index.html#contact"  class="mobile-link" onclick="closeMenu()">Contact</a>
+      <a href="resume.pdf" class="mobile-link mobile-link--resume" download>Resume ↓</a>
+    </nav>
+  </div>
+
+  <!-- CASE STUDY HERO -->
+  <section class="cs-hero-section">
+    <div class="panel-inner">
+      <a href="index.html#work" class="cs-back">← All work</a>
+      <p class="eyebrow">Feature design · UX research</p>
+      <h1>Case Study Title Goes Here</h1>
+      <p class="cs-hero-sub">One or two sentences summarizing the problem and what you designed. Keep it punchy — this is what hiring managers read first.</p>
+      <div class="tags">
+        <span class="tag">Feature design</span>
+        <span class="tag">Mobile</span>
+        <span class="tag">UX research</span>
+      </div>
+      <div class="cs-meta">
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Role</span>
+          <span class="cs-meta-value">UX Designer</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Type</span>
+          <span class="cs-meta-value">Unsolicited redesign</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Tools</span>
+          <span class="cs-meta-value">Figma</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Year</span>
+          <span class="cs-meta-value">2025</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COVER IMAGE — full bleed hero mockup -->
+  <div class="cs-cover-image">
+    <!-- Swap placeholder for: <img src="images/cs-title-cover.png" alt="Project overview mockup"> -->
+    <div class="cs-cover-placeholder">
+      <span>Full-bleed hero image — export your main mockup from Figma at 2x</span>
+    </div>
+  </div>
+
+  <!-- CASE STUDY BODY -->
+  <div class="cs-body">
+
+    <!--
+    ═══════════════════════════════════════════════
+    BLOCK LIBRARY — copy/paste what you need
+
+    1. SINGLE ANNOTATED SCREEN
+       Use for: one key screen you want to explain in detail
+
+    2. BEFORE / AFTER
+       Use for: showing the old design vs your redesign
+
+    3. SCREEN GRID
+       Use for: showing multiple screens in a flow (3–6 screens)
+
+    4. FULL-WIDTH IMAGE
+       Use for: lo-fi wireframes, full flow exported as one image
+
+    5. CALLOUT
+       Use for: key research quotes, insights, constraints
+
+    6. HIGHLIGHT CALLOUT
+       Use for: company response, big proof moments
+    ═══════════════════════════════════════════════
+    -->
+
+    <!-- 01 THE PRODUCT -->
+    <section class="cs-section">
+      <h2>The product</h2>
+      <p>Brief overview of the product. What it does, who it's for, why it exists. 2–3 sentences max.</p>
+    </section>
+
+    <!-- 02 THE PROBLEM -->
+    <section class="cs-section">
+      <h2>The problem</h2>
+      <p>Lead with the user. Who is affected, how often, and what's the real cost to them? Don't describe a missing feature — describe the experience of the gap.</p>
+    </section>
+
+    <!-- 03 RESEARCH & INSIGHTS -->
+    <section class="cs-section">
+      <h2>Research & insights</h2>
+      <p>How did you validate this was a real problem? Conversations, Reddit, app store reviews, personal experience. Show the evidence.</p>
+
+      <!-- Key insight callout -->
+      <div class="cs-callout">
+        <p>"Key quote or insight from your research — a Reddit comment, user quote, or observation that crystallized the problem."</p>
+      </div>
+
+      <p>Continue explaining what the research revealed and how it shaped your direction.</p>
+    </section>
+
+    <!-- 04 CONSTRAINTS -->
+    <section class="cs-section">
+      <h2>Constraints</h2>
+      <p>What were you designing within? Platform patterns, existing design system, technical feasibility, user habits. This shows you understand design doesn't happen in a vacuum.</p>
+      <ul>
+        <li>Constraint one — explain the reasoning</li>
+        <li>Constraint two — explain the reasoning</li>
+        <li>Constraint three — explain the reasoning</li>
+      </ul>
+    </section>
+
+    <!-- 05 EXPLORATION -->
+    <section class="cs-section">
+      <h2>Exploration</h2>
+      <p>What directions did you consider before landing on your solution? 2–3 alternatives and why you ruled them out. This is the most important signal of design maturity.</p>
+
+      <!-- Lo-fi wireframes — full width -->
+      <div class="cs-image-block">
+        <!-- <img src="images/cs-title-lofi.png" alt="Lo-fi wireframe exploration"> -->
+        <div class="cs-cover-placeholder" style="height:280px">
+          <span>Lo-fi wireframes — export from Figma</span>
+        </div>
+      </div>
+      <p class="cs-image-caption">Early lo-fi exploration — [describe what's shown]</p>
+
+      <p>After exploring [direction A] and [direction B], I landed on [final approach] because...</p>
+    </section>
+
+    <!-- 06 DESIGN SOLUTION -->
+    <section class="cs-section">
+      <h2>Design solution</h2>
+      <p>Walk through your final design. Use the blocks below to show screens with explanations. You can mix and match — use as many or as few as each project needs.</p>
+
+      <!-- BEFORE / AFTER -->
+      <div class="cs-before-after">
+        <div class="cs-before-after-item">
+          <!-- <img src="images/cs-title-before.png" alt="Before"> -->
+          <div class="cs-before-after-placeholder"><span>Before screen</span></div>
+          <div class="cs-before-after-caption">
+            <strong>Before</strong>
+            <p>Describe what was wrong with the original design.</p>
+          </div>
+        </div>
+        <div class="cs-before-after-item">
+          <!-- <img src="images/cs-title-after.png" alt="After"> -->
+          <div class="cs-before-after-placeholder"><span>After screen</span></div>
+          <div class="cs-before-after-caption">
+            <strong>After</strong>
+            <p>Describe what your redesign fixes and why you made this choice.</p>
+          </div>
+        </div>
+      </div>
+
+      <p>Explain the specific decision shown above — why this pattern, what you were optimizing for.</p>
+
+      <!-- SCREEN GRID — 3 or 4 screens in a flow -->
+      <div class="cs-screen-grid">
+
+        <div class="cs-screen-item">
+          <!-- <img src="images/cs-title-screen-1.png" alt="Screen 1"> -->
+          <div class="cs-screen-item-placeholder"><span>Screen 1</span></div>
+          <div class="cs-screen-item-caption">
+            <strong>Screen name</strong>
+            <p>What this screen does and why it's designed this way.</p>
+          </div>
+        </div>
+
+        <div class="cs-screen-item">
+          <!-- <img src="images/cs-title-screen-2.png" alt="Screen 2"> -->
+          <div class="cs-screen-item-placeholder"><span>Screen 2</span></div>
+          <div class="cs-screen-item-caption">
+            <strong>Screen name</strong>
+            <p>What this screen does and why it's designed this way.</p>
+          </div>
+        </div>
+
+        <div class="cs-screen-item">
+          <!-- <img src="images/cs-title-screen-3.png" alt="Screen 3"> -->
+          <div class="cs-screen-item-placeholder"><span>Screen 3</span></div>
+          <div class="cs-screen-item-caption">
+            <strong>Screen name</strong>
+            <p>What this screen does and why it's designed this way.</p>
+          </div>
+        </div>
+
+        <div class="cs-screen-item">
+          <!-- <img src="images/cs-title-screen-4.png" alt="Screen 4"> -->
+          <div class="cs-screen-item-placeholder"><span>Screen 4</span></div>
+          <div class="cs-screen-item-caption">
+            <strong>Screen name</strong>
+            <p>What this screen does and why it's designed this way.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SINGLE ANNOTATED SCREEN — for a key moment you want to highlight -->
+      <div class="cs-screen-block">
+        <!-- <img src="images/cs-title-key-screen.png" alt="Key screen"> -->
+        <div class="cs-screen-block-placeholder">
+          <span>Key screen — the most important design decision in this project</span>
+        </div>
+        <div class="cs-screen-annotation">
+          <p class="cs-screen-annotation-label">Design decision</p>
+          <p>Explain the specific choice shown here — the pattern you used, why you chose it over alternatives, and what problem it solves for the user.</p>
+        </div>
+      </div>
+
+      <!-- Add more screen grids, before/afters, or annotated screens as needed -->
+      <!-- Each project is different — delete what you don't need, duplicate what you do -->
+
+    </section>
+
+    <!-- OPTIONAL: Company / external response — use for WTTJ -->
+    <!--
+    <div class="cs-callout-highlight">
+      <p>After publishing this work, [company name] reached out directly. [What happened — a DM, an email, an interview, anything concrete.]</p>
+    </div>
+    -->
+
+    <!-- 07 REFLECTION -->
+    <section class="cs-section">
+      <h2>Reflection</h2>
+      <p>What would you do differently with more time? What would you want to test? What are you still uncertain about? Be specific and honest — this shows you'd be easy to give feedback to.</p>
+      <p>If you made a deliberate tradeoff (like the random color assignment in the Instagram project), explain the reasoning here rather than leaving it as an unexplained gap.</p>
+    </section>
+
+    <!-- BOTTOM NAV -->
+    <div class="cs-nav">
+      <a href="index.html#work" class="cs-nav-link">← All work</a>
+      <a href="case-study-next.html" class="cs-nav-link">Next case study →</a>
+    </div>
+
+  </div><!-- end cs-body -->
+
+  <!-- FOOTER -->
+  <footer class="panel panel-footer" id="contact">
+    <div class="panel-inner footer-inner">
+      <div class="footer-top">
+        <div class="footer-left">
+          <p class="eyebrow">Let's connect</p>
+          <h2 class="footer-heading">Open to remote &<br>hybrid roles in Atlanta.</h2>
+          <a href="mailto:hireme.soyeniyi@gmail.com" class="footer-email">hireme.soyeniyi@gmail.com</a>
+          <div class="footer-actions">
+            <a href="mailto:hireme.soyeniyi@gmail.com" class="btn-primary">Send an email</a>
+            <a href="resume.pdf" class="btn-outline" download>Resume ↓</a>
+          </div>
+        </div>
+        <div class="footer-wordmark">Sammi<br>Oyeniyi</div>
+      </div>
+      <div class="footer-bottom">
+        <p>Designed & built by Sammi Oyeniyi · 2026</p>
+        <div class="footer-links">
+          <a href="https://github.com/sammithedev" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/samoyeniyi" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://sammithedev.substack.com" target="_blank" rel="noopener">Substack</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.contains('is-open');
+      if (isOpen) { closeMenu(); } else { openMenu(); }
+    });
+    function openMenu() {
+      mobileMenu.classList.add('is-open');
+      hamburger.classList.add('is-active');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      mobileMenu.classList.remove('is-open');
+      hamburger.classList.remove('is-active');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+    mobileMenu.addEventListener('click', (e) => { if (e.target === mobileMenu) closeMenu(); });
+  </script>
+</body>
+</html>

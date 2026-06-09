@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sammi Oyeniyi — UX Designer</title>
-  <meta name="description" content="UX designer with a technical foundation. I find the gaps real users fall into — and design the fix.">
+  <meta name="description" content="UX designer with a technical foundation. Atlanta, GA.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,235 +15,456 @@
   <!-- NAV -->
   <header class="nav">
     <a href="index.html" class="nav-logo">Sammi Oyeniyi</a>
-    <div class="nav-right">
-      <ul class="nav-links">
-        <li><a href="#work">Work</a></li>
-        <li><a href="#beyond">Beyond</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="resume.pdf" class="nav-resume" download>Resume ↓</a></li>
-      </ul>
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
-        <span class="toggle-icon">☀</span>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#bose">Bose</a></li>
+      <li><a href="#thinking">Writing</a></li>
+      <li><a href="#beyond">Beyond</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="resume.pdf" class="nav-resume" download>Resume ↓</a></li>
+    </ul>
+    <!-- Mobile controls -->
+    <div class="nav-mobile-controls">
+      <a href="resume.pdf" class="nav-resume nav-resume--mobile" download>Resume ↓</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
     </div>
   </header>
 
-  <main>
+  <!-- Mobile menu overlay -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-menu-inner">
+      <a href="#work"     class="mobile-link" onclick="closeMenu()">Work</a>
+      <a href="#bose"     class="mobile-link" onclick="closeMenu()">Bose</a>
+      <a href="#thinking" class="mobile-link" onclick="closeMenu()">Writing</a>
+      <a href="#beyond"   class="mobile-link" onclick="closeMenu()">Beyond</a>
+      <a href="#contact"  class="mobile-link" onclick="closeMenu()">Contact</a>
+      <a href="resume.pdf" class="mobile-link mobile-link--resume" download>Resume ↓</a>
+    </nav>
+  </div>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-marquee-wrap">
-        <div class="hero-marquee">
-          <span>Sammi Oyeniyi</span>
-          <span class="marquee-sep">·</span>
-          <span>Sammi Oyeniyi</span>
-          <span class="marquee-sep">·</span>
-          <span>Sammi Oyeniyi</span>
-          <span class="marquee-sep">·</span>
-          <span>Sammi Oyeniyi</span>
-          <span class="marquee-sep">·</span>
-        </div>
-      </div>
-      <div class="hero-avatar-block">
-        <!-- Replace with your actual illustration: <img src="images/avatar.png" alt="Sammi Oyeniyi" class="hero-avatar-img"> -->
-        <div class="hero-avatar-placeholder">S</div>
-      </div>
-      <div class="hero-content">
-        <div class="hero-intro">
-          <div class="badge"><span class="badge-dot"></span>Available for work · Atlanta, GA · Remote</div>
-          <h1>I find the gaps<br>real users fall into —<br><em>and design the fix.</em></h1>
-          <p class="hero-sub">UX designer with a technical foundation. 6+ years in enterprise SaaS means I've lived inside user frustration firsthand. I work in Figma and build in code.</p>
+  <!-- SCROLL STACK WRAPPER -->
+  <div class="stack-wrapper">
+
+    <!-- PANEL 1: HERO -->
+    <section class="panel panel-hero" id="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="available-badge">
+            <span class="badge-dot"></span>
+            Open to remote & Atlanta opportunities
+          </div>
+          <!-- HEADLINE: write your own here -->
+          <h1 class="hero-heading">
+            <!-- Line 1 -->
+            <span class="hero-line">Your headline</span>
+            <!-- Line 2 — italic accent -->
+            <span class="hero-line hero-line--accent"><em>goes right here.</em></span>
+          </h1>
+          <p class="hero-sub">
+            <!-- Your subheading: role, background, what makes you different -->
+            UX Designer · Technical background · Atlanta, GA
+          </p>
+          <div class="hero-skills">
+            <span>UX Design</span>
+            <span>Feature Design</span>
+            <span>UX Research</span>
+            <span>HTML / CSS / JS</span>
+            <span>Figma</span>
+          </div>
           <div class="hero-actions">
             <a href="#work" class="btn-primary">See my work</a>
-            <a href="resume.pdf" class="btn-ghost" download>Download resume ↓</a>
+            <a href="resume.pdf" class="btn-outline" download>Download Resume ↓</a>
           </div>
         </div>
-        <div class="hero-skills-col">
-          <p class="skills-label">What I bring</p>
-          <ul class="skills-list">
-            <li>UX / Product design</li>
-            <li>Feature design</li>
-            <li>UX research</li>
-            <li>HTML / CSS / JS</li>
-            <li>Figma · Framer</li>
-            <li>API integrations</li>
-            <li>Systems thinking</li>
-          </ul>
+        <div class="hero-photo">
+          <!-- Replace with: <img src="images/avatar.png" alt="Sammi Oyeniyi"> -->
+          <div class="hero-photo-placeholder">
+            <span>Your photo<br>or illustration</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- WORK -->
-    <section class="work" id="work">
-      <div class="work-header">
-        <p class="eyebrow">Selected work</p>
-        <p class="work-header-note">Unsolicited feature designs for real products — finding gaps users fall into.</p>
+    <!-- PANEL 2: WORK -->
+    <section class="panel panel-work" id="work">
+      <div class="panel-inner">
+        <div class="section-header">
+          <p class="eyebrow">Selected work</p>
+          <h2>Product thinking in the wild</h2>
+          <p>A collection of concepts, redesigns, and side projects exploring how better product decisions create better user experiences.</p>
+        </div>
+
+        <div class="work-grid">
+
+          <!-- ROW 1: text left, image right -->
+          <a href="case-study-wttj.html" class="work-row">
+            <div class="work-info">
+              <div class="work-meta">
+                <span class="work-num">01</span>
+                <span class="work-noticed">★ Company noticed this</span>
+              </div>
+              <h3>Fixing the job tracker that forgets you</h3>
+              <p>The "Move" feature on WTTJ loses crucial application context — users can't track rejections, ghosting, or withdrawn offers. I redesigned the dashboard to fix this.</p>
+              <div class="tags">
+                <span class="tag">Feature design</span>
+                <span class="tag">UX research</span>
+                <span class="tag">Job tech</span>
+              </div>
+              <span class="work-cta">Read case study →</span>
+            </div>
+            <div class="work-image work-image--wttj">
+              <!-- <img src="images/cs-wttj-thumb.png" alt="WTTJ mockup"> -->
+              <span class="work-image-label">Welcome to the Jungle</span>
+            </div>
+          </a>
+
+          <!-- ROW 2: image left, text right -->
+          <a href="case-study-instagram.html" class="work-row work-row--flip">
+            <div class="work-image work-image--instagram">
+              <!-- <img src="images/cs-instagram-thumb.png" alt="Instagram mockup"> -->
+              <span class="work-image-label">Instagram</span>
+            </div>
+            <div class="work-info">
+              <div class="work-meta">
+                <span class="work-num">02</span>
+              </div>
+              <h3>Close Friends, but for your actual life</h3>
+              <p>Instagram's Close Friends assumes your inner circle is one group. For most people, it isn't. I designed a multi-list system that fits how people actually share.</p>
+              <div class="tags">
+                <span class="tag">Feature design</span>
+                <span class="tag">Mobile UX</span>
+                <span class="tag">Social</span>
+              </div>
+              <span class="work-cta">Read case study →</span>
+            </div>
+          </a>
+
+          <!-- ROW 3: text left, image right -->
+          <a href="case-study-hinge.html" class="work-row">
+            <div class="work-info">
+              <div class="work-meta">
+                <span class="work-num">03</span>
+              </div>
+              <h3>When filters fail single parents</h3>
+              <p>Hinge reduces family dynamics to a yes/no. Single parents deserve a more honest, nuanced way to represent their lives and find compatible matches.</p>
+              <div class="tags">
+                <span class="tag">Feature design</span>
+                <span class="tag">UX research</span>
+                <span class="tag">Dating tech</span>
+              </div>
+              <span class="work-cta">Read case study →</span>
+            </div>
+            <div class="work-image work-image--hinge">
+              <!-- <img src="images/cs-hinge-thumb.png" alt="Hinge mockup"> -->
+              <span class="work-image-label">Hinge</span>
+            </div>
+          </a>
+
+        </div>
       </div>
-
-      <!-- FEATURED PROJECT -->
-      <a href="case-study-wttj.html" class="project-row project-row--featured">
-        <div class="project-image-wrap">
-          <!-- Replace src with your actual mockup image -->
-          <div class="project-image-placeholder">
-            <span>Welcome to the Jungle</span>
-          </div>
-          <!-- <img src="images/cs-wttj-hero.png" alt="Welcome to the Jungle redesign mockups"> -->
-        </div>
-        <div class="project-info">
-          <div class="project-meta">
-            <span class="project-num">01</span>
-            <span class="project-got-noticed">★ Company noticed this</span>
-          </div>
-          <h2 class="project-title">Fixing the job tracker that forgets you</h2>
-          <p class="project-desc">The "Move" feature on WTTJ loses crucial application context — users have no way to track rejections, ghosting, or withdrawn offers. I redesigned the tracking dashboard to fix this.</p>
-          <div class="tags">
-            <span class="tag">Feature design</span>
-            <span class="tag">UX research</span>
-            <span class="tag">Job tech</span>
-          </div>
-          <span class="project-cta">Read case study →</span>
-        </div>
-      </a>
-
-      <div class="project-divider"></div>
-
-      <!-- PROJECT 2 -->
-      <a href="case-study-instagram.html" class="project-row project-row--reverse">
-        <div class="project-image-wrap">
-          <div class="project-image-placeholder">
-            <span>Instagram</span>
-          </div>
-        </div>
-        <div class="project-info">
-          <div class="project-meta">
-            <span class="project-num">02</span>
-          </div>
-          <h2 class="project-title">Close Friends, but for your actual life</h2>
-          <p class="project-desc">Instagram's Close Friends assumes your inner circle is one group. For most people, it isn't. I designed a multi-list system that fits how people actually share.</p>
-          <div class="tags">
-            <span class="tag">Feature design</span>
-            <span class="tag">Mobile UX</span>
-            <span class="tag">Social</span>
-          </div>
-          <span class="project-cta">Read case study →</span>
-        </div>
-      </a>
-
-      <div class="project-divider"></div>
-
-      <!-- PROJECT 3 -->
-      <a href="case-study-hinge.html" class="project-row">
-        <div class="project-image-wrap">
-          <div class="project-image-placeholder">
-            <span>Hinge</span>
-          </div>
-        </div>
-        <div class="project-info">
-          <div class="project-meta">
-            <span class="project-num">03</span>
-          </div>
-          <h2 class="project-title">When filters fail single parents</h2>
-          <p class="project-desc">Hinge reduces family dynamics to a yes/no. Single parents deserve a more honest, nuanced way to represent their lives and find compatible matches.</p>
-          <div class="tags">
-            <span class="tag">Feature design</span>
-            <span class="tag">UX research</span>
-            <span class="tag">Dating tech</span>
-          </div>
-          <span class="project-cta">Read case study →</span>
-        </div>
-      </a>
     </section>
 
-    <!-- BEYOND -->
-    <section class="beyond" id="beyond">
-      <div class="beyond-inner">
-        <div class="beyond-header">
+    <!-- PANEL: BOSE -->
+    <section class="panel panel-bose" id="bose">
+      <div class="panel-inner">
+        <div class="bose-layout">
+          <div class="bose-left">
+            <p class="eyebrow">Professional work</p>
+            <h2 class="bose-heading">In production<br>at <em>Bose</em></h2>
+            <p class="bose-sub">Real pages, shipped at scale, for a global audio brand. As part of a cross-functional team I helped publish and maintain e-commerce and marketing content across six global sites — spanning product pages, campaign launches, and high-profile collaborations.</p>
+            <div class="bose-details">
+              <div class="bose-detail">
+                <span class="bose-detail-label">Role</span>
+                <span class="bose-detail-value">Web Content Author / Designer</span>
+              </div>
+              <div class="bose-detail">
+                <span class="bose-detail-label">Tools</span>
+                <span class="bose-detail-value">Contentstack · Adobe Experience Manager · Jira</span>
+              </div>
+              <div class="bose-detail">
+                <span class="bose-detail-label">Scope</span>
+                <span class="bose-detail-value">6 global marketing sites · US & Canada</span>
+              </div>
+            </div>
+            <a href="bose.html" class="btn-primary">View Bose work →</a>
+          </div>
+          <div class="bose-right">
+            <!-- Replace these with real screenshots -->
+            <div class="bose-grid">
+              <div class="bose-thumb bose-thumb--tall">
+                <!-- <img src="images/bose-page-1.png" alt="Bose page"> -->
+                <span>Page screenshot</span>
+              </div>
+              <div class="bose-thumb-stack">
+                <div class="bose-thumb">
+                  <!-- <img src="images/bose-page-2.png" alt="Bose page"> -->
+                  <span>Page screenshot</span>
+                </div>
+                <div class="bose-thumb">
+                  <!-- <img src="images/bose-page-3.png" alt="Bose page"> -->
+                  <span>Page screenshot</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PANEL 3: DESIGN THINKING -->
+    <section class="panel panel-thinking" id="thinking">
+      <div class="panel-inner">
+        <div class="section-header section-header--row">
+          <div>
+            <p class="eyebrow">Design thinking</p>
+            <h2>I write about UX in the wild</h2>
+            <p>Thoughts on design, careers, product strategy, and the occasional existential crisis about interfaces.</p>
+          </div>
+          <a href="https://sammithedev.substack.com" target="_blank" rel="noopener" class="substack-link">All posts on Substack →</a>
+        </div>
+
+        <div class="thinking-list">
+          <a href="https://sammithedev.substack.com/p/uber-doesnt-pay-driversits-ux-does" target="_blank" rel="noopener" class="thinking-row">
+            <div class="thinking-row-left">
+              <span class="thinking-num">01</span>
+              <div>
+                <p class="thinking-label">UX critique</p>
+                <h3>Uber Doesn't Pay Drivers — Its UX Does</h3>
+                <p>How tip architecture and hidden totals keep drivers working for less than they think. Written from experience — I drove for Uber to pay the bills.</p>
+              </div>
+            </div>
+            <span class="thinking-arrow">→</span>
+          </a>
+          <a href="https://sammithedev.substack.com/p/welcome-to-the-jungle-is-great-for" target="_blank" rel="noopener" class="thinking-row">
+            <div class="thinking-row-left">
+              <span class="thinking-num">02</span>
+              <div>
+                <p class="thinking-label">UX critique</p>
+                <h3>WTTJ Is Great for Job Hunting — Except This One Thing</h3>
+                <p>The post that became a case study. The company read it.</p>
+              </div>
+            </div>
+            <span class="thinking-arrow">→</span>
+          </a>
+          <a href="https://sammithedev.substack.com" target="_blank" rel="noopener" class="thinking-row">
+            <div class="thinking-row-left">
+              <span class="thinking-num">03</span>
+              <div>
+                <p class="thinking-label">Career</p>
+                <h3>Why I Chose Contracts Over a Permanent Job</h3>
+                <p>Two years of unemployment taught me what proximity to designers is actually worth.</p>
+              </div>
+            </div>
+            <span class="thinking-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    </section>
+
+    <!-- PANEL: TECH STACK + RESUME -->
+    <section class="panel panel-stack" id="stack">
+      <div class="panel-inner">
+        <div class="stack-section-header">
+          <div>
+            <p class="eyebrow">Tools & experience</p>
+            <h2>What I work with</h2>
+          </div>
+          <a href="resume.pdf" class="btn-primary" download>Download full resume ↓</a>
+        </div>
+
+        <div class="tech-grid">
+          <div class="tech-item">
+            <div class="tech-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 12a4 4 0 1 0 8 0 4 4 0 0 0-8 0z" fill="#D14836"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke="#D14836" stroke-width="1.5" fill="none"/></svg>
+            </div>
+            <span class="tech-name">Figma</span>
+            <span class="tech-desc">Design & prototyping</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon tech-icon--code">
+              <span>&lt;/&gt;</span>
+            </div>
+            <span class="tech-name">HTML / CSS / JS</span>
+            <span class="tech-desc">Frontend development</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon tech-icon--jira">
+              <span>J</span>
+            </div>
+            <span class="tech-name">Jira</span>
+            <span class="tech-desc">Project management</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon tech-icon--adobe">
+              <span>Ai</span>
+            </div>
+            <span class="tech-name">Adobe Suite</span>
+            <span class="tech-desc">Creative tools</span>
+          </div>
+        </div>
+
+        <div class="resume-strip">
+          <div class="resume-roles">
+            <div class="resume-role">
+              <div class="resume-role-left">
+                <span class="resume-role-title">Web Content Author / Designer</span>
+                <span class="resume-role-co">Bose · Contract</span>
+              </div>
+              <span class="resume-role-date">Nov 2025 – Present</span>
+            </div>
+            <div class="resume-role">
+              <div class="resume-role-left">
+                <span class="resume-role-title">Freelance UX Designer & Developer</span>
+                <span class="resume-role-co">Self-employed</span>
+              </div>
+              <span class="resume-role-date">Jun 2024 – Present</span>
+            </div>
+            <div class="resume-role">
+              <div class="resume-role-left">
+                <span class="resume-role-title">Applications Engineer</span>
+                <span class="resume-role-co">Auxo Solutions</span>
+              </div>
+              <span class="resume-role-date">Aug 2023 – Feb 2024</span>
+            </div>
+            <div class="resume-role">
+              <div class="resume-role-left">
+                <span class="resume-role-title">Software Support Engineer</span>
+                <span class="resume-role-co">Code Climate</span>
+              </div>
+              <span class="resume-role-date">Jan 2022 – Aug 2023</span>
+            </div>
+            <div class="resume-role">
+              <div class="resume-role-left">
+                <span class="resume-role-title">Production Support Engineer</span>
+                <span class="resume-role-co">Unqork</span>
+              </div>
+              <span class="resume-role-date">Dec 2019 – Jan 2022</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PANEL 4: BEYOND -->
+    <section class="panel panel-beyond" id="beyond">
+      <div class="panel-inner">
+        <div class="section-header">
           <p class="eyebrow">Beyond the portfolio</p>
-          <h2 class="beyond-title">More than mockups</h2>
+          <h2 class="beyond-heading">The person<br><em>behind the work</em></h2>
         </div>
-        <div class="beyond-grid">
-          <div class="beyond-card beyond-card--wide">
-            <p class="beyond-card-label">Writing</p>
-            <h3>Design thinking out loud</h3>
-            <p>I write about UX failures I notice in the wild — apps I use, products I've worked on, and design decisions that quietly shape behavior. Published on Substack.</p>
-            <div class="beyond-articles">
-              <a href="https://sammithedev.substack.com/p/uber-doesnt-pay-driversits-ux-does" target="_blank" rel="noopener" class="beyond-article-link">
-                <span>Uber Doesn't Pay Drivers — Its UX Does</span>
-                <span class="article-arrow">→</span>
-              </a>
-              <a href="https://sammithedev.substack.com/p/welcome-to-the-jungle-is-great-for" target="_blank" rel="noopener" class="beyond-article-link">
-                <span>WTTJ Is Great for Job Hunting — Except This One Thing</span>
-                <span class="article-arrow">→</span>
-              </a>
-              <a href="https://sammithedev.substack.com" target="_blank" rel="noopener" class="beyond-article-link">
-                <span>Why I Chose Contracts Over a Permanent Job</span>
-                <span class="article-arrow">→</span>
-              </a>
-            </div>
-            <a href="https://sammithedev.substack.com" target="_blank" rel="noopener" class="beyond-link">Visit Substack →</a>
-          </div>
-          <div class="beyond-card">
-            <p class="beyond-card-label">Background</p>
-            <h3>Support engineer turned designer</h3>
-            <p>6+ years inside enterprise SaaS at Unqork, Code Climate, and Blink Health. I've seen what breaks, what confuses people, and where products quietly fail. That's where my design instincts come from.</p>
-            <div class="beyond-stats">
-              <div class="bstat"><span class="bstat-num">6+</span><span class="bstat-label">Years in SaaS</span></div>
-              <div class="bstat"><span class="bstat-num">3</span><span class="bstat-label">Case studies</span></div>
-              <div class="bstat"><span class="bstat-num">1</span><span class="bstat-label">Company noticed</span></div>
+        <div class="beyond-layout">
+          <div class="beyond-photo">
+            <!-- Replace with: <img src="images/sammi-photo.jpg" alt="Sammi"> -->
+            <div class="beyond-photo-placeholder">
+              <span>Drop a photo here —<br>workspace, candid, anything real</span>
             </div>
           </div>
-          <div class="beyond-card">
-            <p class="beyond-card-label">Freelance</p>
-            <h3>Building for real clients</h3>
-            <p>End-to-end website implementations — from gathering requirements to design, build, and launch. Third-party integrations, scalable design systems, and long-term strategy.</p>
-            <a href="mailto:hireme.soyeniyi@gmail.com" class="beyond-link">Work with me →</a>
+          <div class="beyond-facts">
+            <div class="fact-row">
+              <span class="fact-label">Based in</span>
+              <span class="fact-value">Atlanta, GA — originally from Brooklyn, NY</span>
+            </div>
+            <div class="fact-row">
+              <span class="fact-label">Currently learning</span>
+              <span class="fact-value">Photography</span>
+            </div>
+            <div class="fact-row">
+              <span class="fact-label">Currently reading</span>
+              <span class="fact-value">The Design of Everyday Things — Don Norman</span>
+            </div>
+            <div class="fact-row">
+              <span class="fact-label">Languages</span>
+              <span class="fact-value">English, Haitian Creole</span>
+            </div>
+            <div class="fact-row">
+              <span class="fact-label">Fun fact</span>
+              <span class="fact-value">My hobby is learning new hobbies</span>
+            </div>
+            <div class="fact-row">
+              <span class="fact-label">Also me</span>
+              <span class="fact-value">I notice UX problems in everything — menus, checkout flows, ATMs, you name it</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-  </main>
-
-  <!-- FOOTER / CONTACT -->
-  <footer class="footer" id="contact">
-    <div class="footer-inner">
-      <div class="footer-top">
-        <div class="footer-left">
-          <p class="eyebrow eyebrow--terra">Let's connect</p>
-          <h2 class="footer-heading">Open to remote<br>UX & product design roles.</h2>
-          <a href="mailto:hireme.soyeniyi@gmail.com" class="footer-email">hireme.soyeniyi@gmail.com</a>
-          <div class="footer-actions">
-            <a href="mailto:hireme.soyeniyi@gmail.com" class="btn-primary">Send an email</a>
-            <a href="resume.pdf" class="btn-ghost" download>Resume ↓</a>
+    <!-- PANEL 5: FOOTER / CONTACT -->
+    <footer class="panel panel-footer" id="contact">
+      <div class="panel-inner footer-inner">
+        <div class="footer-top">
+          <div class="footer-left">
+            <p class="eyebrow">Let's connect</p>
+            <h2 class="footer-heading">Open to remote &<br>hybrid roles in Atlanta.</h2>
+            <a href="mailto:hireme.soyeniyi@gmail.com" class="footer-email">hireme.soyeniyi@gmail.com</a>
+            <div class="footer-actions">
+              <a href="mailto:hireme.soyeniyi@gmail.com" class="btn-primary">Send an email</a>
+              <a href="resume.pdf" class="btn-outline" download>Resume ↓</a>
+            </div>
+          </div>
+          <div class="footer-wordmark">Sammi<br>Oyeniyi</div>
+        </div>
+        <div class="footer-bottom">
+          <p>Designed & built by Sammi Oyeniyi · 2026</p>
+          <div class="footer-links">
+            <a href="https://github.com/sammithedev" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com/in/samoyeniyi" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://sammithedev.substack.com" target="_blank" rel="noopener">Substack</a>
           </div>
         </div>
-        <div class="footer-right">
-          <div class="footer-logo-big">Sammi<br>Oyeniyi</div>
-        </div>
       </div>
-      <div class="footer-bottom">
-        <p class="footer-credit">Designed & built by Sammi Oyeniyi · 2026</p>
-        <div class="footer-links">
-          <a href="https://github.com/sammithedev" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://linkedin.com/in/samoyeniyi" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://sammithedev.substack.com" target="_blank" rel="noopener">Substack</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
+
+  </div><!-- end .stack-wrapper -->
 
   <script>
-    const toggle = document.getElementById('themeToggle');
-    const html = document.documentElement;
-    const icon = toggle.querySelector('.toggle-icon');
+    // Stacking scroll — hero scales down as next panel covers it
+    const hero = document.querySelector('.panel-hero');
+    function onScroll() {
+      if (!hero) return;
+      const rect = hero.getBoundingClientRect();
+      const progress = Math.min(Math.max(-rect.top / (rect.height * 0.6), 0), 1);
+      hero.style.transform = `scale(${1 - progress * 0.035})`;
+      hero.style.transformOrigin = 'top center';
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
 
-    // Default to dark
-    let isDark = true;
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
 
-    toggle.addEventListener('click', () => {
-      isDark = !isDark;
-      html.setAttribute('data-theme', isDark ? 'dark' : 'light');
-      icon.textContent = isDark ? '☀' : '☾';
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.contains('is-open');
+      if (isOpen) { closeMenu(); } else { openMenu(); }
+    });
+
+    function openMenu() {
+      mobileMenu.classList.add('is-open');
+      hamburger.classList.add('is-active');
+      hamburger.setAttribute('aria-expanded', 'true');
+      mobileMenu.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      mobileMenu.classList.remove('is-open');
+      hamburger.classList.remove('is-active');
+      hamburger.setAttribute('aria-expanded', 'false');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    // Close on outside click
+    mobileMenu.addEventListener('click', (e) => {
+      if (e.target === mobileMenu) closeMenu();
     });
   </script>
 
