@@ -74,7 +74,7 @@
 
   <!-- COVER IMAGE — full bleed hero mockup -->
   <div class="cs-cover-image">
-    <img src="assets/ig-hero.png" alt="Project overview mockup">
+    <img src="assets/cs-hero-ig.png" alt="Project overview mockup">
    
   </div>
 
@@ -114,17 +114,36 @@
     <!-- 02 THE PROBLEM -->
     <section class="cs-section">
       <h2>The problem</h2>
-      <p>Lead with the user. Who is affected, how often, and what's the real cost to them? Don't describe a missing feature — describe the experience of the gap.</p>
+      <p>Instagram’s Close Friends feature assumes your inner circle is one group. For most people, it isn’t. This concept actually started during a conversation with a coworker about how limiting the current Close Friends feature feels once your life starts existing in different spaces. We realized Instagram treats “Close Friends” as one audience, when realistically, people share different parts of themselves with different groups.</p>
+
+       <p>Some people want a space for family, gym content, dating content, memes, or their actual closest friends. Right now, users either over share to one giant list, alter the list every time they post or decide not to post at all.</p>
+
+       <div class="cs-before-after">
+        <div class="cs-before-after-item">
+          <img src="assets/case-studies/Instagram/before-creation-view.png" alt="Mockup of instagram close friends currently">
+          <div class="cs-before-after-caption">
+            <strong>Before</strong>
+            <p>The current Close Friends Feature only allows you to create one close friends list. You can't create separate list for different groups of friends.</p>
+          </div>
+        </div>
+        <div class="cs-before-after-item">
+          <img src="assets/case-studies/Instagram/before-story-view" alt="Mockup of instagram close friends currently">
+          <div class="cs-before-after-caption">
+            <strong>Before</strong>
+            <p>When you post a story to your close friends list, it's visable to everyone included. You have to manually update the list to control who can see what each time.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- 03 RESEARCH & INSIGHTS -->
     <section class="cs-section">
-      <h2>Research & insights</h2>
-      <p>How did you validate this was a real problem? Conversations, Reddit, app store reviews, personal experience. Show the evidence.</p>
+      <h2>Research & insights</h2> 
+      <p>To validate the idea further, I searched Reddit to see if other users felt the same way and found multiple requests for this exact feature. <a href="https://www.reddit.com/r/Instagram/comments/1piq7m4/close_friends_multiples/" target="_blank" rel="noopener" style="text-decoration: underline;">One post</a> specifically mentioned wanting separate story lists for different groups of friends. That helped confirm this wasn’t just a personal frustration, but an actual user need.</p>
 
       <!-- Key insight callout -->
       <div class="cs-callout">
-        <p>"Key quote or insight from your research — a Reddit comment, user quote, or observation that crystallized the problem."</p>
+        <p>"It would be really cool and awesome if you could have multiple close friends story's similar to snapchats private story features. It would lessen the amount of spam accounts or whatever too i feel. I mostly want it because i have certain friends who would enjoy certain things and others who don't, ie a story to post music and a story to post myself."</p>
       </div>
 
       <p>Continue explaining what the research revealed and how it shaped your direction.</p>
@@ -133,7 +152,7 @@
     <!-- 04 CONSTRAINTS -->
     <section class="cs-section">
       <h2>Constraints</h2>
-      <p>What were you designing within? Platform patterns, existing design system, technical feasibility, user habits. This shows you understand design doesn't happen in a vacuum.</p>
+      <p>The goal of this redesign was to make the feature feel native to Instagram. By intentionally keeping the UI close to Instagram’s existing design system, the feature feels familiar immediately and introduces very little friction for users.</p>
       <ul>
         <li>Constraint one — explain the reasoning</li>
         <li>Constraint two — explain the reasoning</li>
@@ -144,41 +163,92 @@
     <!-- 05 EXPLORATION -->
     <section class="cs-section">
       <h2>Exploration</h2>
-      <p>What directions did you consider before landing on your solution? 2–3 alternatives and why you ruled them out. This is the most important signal of design maturity.</p>
+      <p>The first area I focused on was list creation. Instead of one singular Close Friends list, users can create multiple lists directly within the existing Close Friends settings flow. If no lists exist yet, users are prompted to create one. From there, they can name the list and choose which followers belong in it.</p>
+
+         <p>I also included the ability to delete lists. Instead of using a swipe gesture, the delete interaction follows a press-and-reveal pattern similar to Instagram messages. Swiping already has a strong navigation behavior throughout Instagram, so reusing it for deletion could create friction and accidental actions.</p>
 
       <!-- Lo-fi wireframes — full width -->
       <div class="cs-image-block">
-        <!-- <img src="images/cs-title-lofi.png" alt="Lo-fi wireframe exploration"> -->
-        <div class="cs-cover-placeholder" style="height:280px">
-          <span>Lo-fi wireframes — export from Figma</span>
+        <!-- <img src="assets/case-studies/lo-fi/Close Friends delete - lo.png" alt="Lo-fi wireframe exploration"> -->
+        <div class="cs-screen-item">
+          <img src="assets/case-studies/Instagram/lo-fi/close-friends-choose-list.png" alt="close friends list selection screen redesign mockup">
+          <div class="cs-screen-item-caption">
+            <strong>List Creation</strong>
+            <p>Users can create their close friends list here. They can name the list and select which followers will be included.</p>
+          </div>
+        </div>
+        
+        <div class="cs-screen-item">
+          <img src="assets/case-studies/Instagram/lo-fi/close-friends-main-screen.png" alt="close friends list view screen redesign mockup">
+          <div class="cs-screen-item-caption">
+            <strong>Lists View</strong>
+            <p>This screen is a new addition, allowing users to view their multiple close friends list. From here they can edit or delete list. </p>
+          </div>
+        </div>
+
+        <div class="cs-screen-item">
+          <img src="assets/case-studies/Instagram/lo-fi/close-friends-delete.png" alt="close friends list view screen redesign mockup">
+          <div class="cs-screen-item-caption">
+            <strong>Delete List</strong>
+            <p>Following the current Instagram delete functionality, users can hold down a list to delete it.</p>
+          </div>
         </div>
       </div>
-      <p class="cs-image-caption">Early lo-fi exploration — [describe what's shown]</p>
 
-      <p>After exploring [direction A] and [direction B], I landed on [final approach] because...</p>
+      <div class="cs-image-block">
+        <div class="cs-screen-item">
+          <img src="assets/case-studies/Instagram/lo-fi/close-friends-post-story.png" alt="close friends post list view screen redesign mockup">
+          <div class="cs-screen-item-caption">
+            <strong>Post List View</strong>
+            <p>Users can select how they want to post their story. If they select close friends, it will bring them to the next screen.</p>
+          </div>
+        </div>
+        
+        <div class="cs-screen-item">
+          <img src="assets/case-studies/Instagram/lo-fi/close-friends-post-story-list.png" alt="Screen 3">
+          <div class="cs-screen-item-caption">
+            <strong>Close Friend List Selection</strong>
+            <p>From here, the user can select which close friend list they want to post their story to.</p>
+          </div>
+        </div>
+
+        <div class="cs-screen-item">
+          <img src="assets/case-studies/Instagram/lo-fi/close-friends-view-story.png" alt="Screen 3">
+          <div class="cs-screen-item-caption">
+            <strong>User Story View Screen</strong>
+            <p>When users view their story, they can see which list they posted to based on the close friends stars.</p>
+          </div>
+        </div>
+      </div>
+     
+
+     
+
+     
+      <!-- <p class="cs-image-caption">Early lo-fi exploration — [describe what's shown]</p> -->
+
     </section>
 
     <!-- 06 DESIGN SOLUTION -->
     <section class="cs-section">
       <h2>Design solution</h2>
-      <p>Walk through your final design. Use the blocks below to show screens with explanations. You can mix and match — use as many or as few as each project needs.</p>
+      <h3>Story Audience Selection</h3>
+      <p>When posting a story, users can choose which Close Friends list they want to share to through the same style of bottom sheet selector Instagram already uses throughout the app. The experience supports multi-select because some content naturally overlaps between groups. A user might want to share something with both their “Family” and “College Friends” lists without reposting the same story twice.</p>
 
       <!-- BEFORE / AFTER -->
       <div class="cs-before-after">
         <div class="cs-before-after-item">
-          <!-- <img src="images/cs-title-before.png" alt="Before"> -->
-          <div class="cs-before-after-placeholder"><span>Before screen</span></div>
+          <img src="assets/case-studies/Instagram/hi-fi/close-friends-edit-list.png" alt="Mockup of instagram close friends redesign">
           <div class="cs-before-after-caption">
             <strong>Before</strong>
-            <p>Describe what was wrong with the original design.</p>
+            <p>The current Close Friends Feature only allows you to create one close friends list. You can't create separate list for different groups of friends.</p>
           </div>
         </div>
         <div class="cs-before-after-item">
-          <!-- <img src="images/cs-title-after.png" alt="After"> -->
-          <div class="cs-before-after-placeholder"><span>After screen</span></div>
+          <img src="assets/case-studies/Instagram/hi-fi/close-friends-post-story.png" alt="Mockup of instagram close friends redesign">
           <div class="cs-before-after-caption">
-            <strong>After</strong>
-            <p>Describe what your redesign fixes and why you made this choice.</p>
+            <strong>Before</strong>
+            <p>When you post a story to your close friends list, it's visable to everyone included. You have to manually update the list to control who can see what each time.</p>
           </div>
         </div>
       </div>
@@ -189,8 +259,7 @@
       <div class="cs-screen-grid">
 
         <div class="cs-screen-item">
-          <!-- <img src="images/cs-title-screen-1.png" alt="Screen 1"> -->
-          <div class="cs-screen-item-placeholder"><span>Screen 1</span></div>
+          <img src="assets/case-studies/Instagram/hi-fi/close-friends-new-list.png" alt="Screen 1">
           <div class="cs-screen-item-caption">
             <strong>Screen name</strong>
             <p>What this screen does and why it's designed this way.</p>
@@ -198,8 +267,7 @@
         </div>
 
         <div class="cs-screen-item">
-          <!-- <img src="images/cs-title-screen-2.png" alt="Screen 2"> -->
-          <div class="cs-screen-item-placeholder"><span>Screen 2</span></div>
+          <img src="assets/case-studies/Instagram/hi-fi/close-friends-main.png" alt="Screen 2">
           <div class="cs-screen-item-caption">
             <strong>Screen name</strong>
             <p>What this screen does and why it's designed this way.</p>
@@ -207,8 +275,7 @@
         </div>
 
         <div class="cs-screen-item">
-          <!-- <img src="images/cs-title-screen-3.png" alt="Screen 3"> -->
-          <div class="cs-screen-item-placeholder"><span>Screen 3</span></div>
+          <img src="assets/case-studies/Instagram/hi-fi/close-friends-post-style.png" alt="Screen 3">
           <div class="cs-screen-item-caption">
             <strong>Screen name</strong>
             <p>What this screen does and why it's designed this way.</p>
@@ -216,8 +283,7 @@
         </div>
 
         <div class="cs-screen-item">
-          <!-- <img src="images/cs-title-screen-4.png" alt="Screen 4"> -->
-          <div class="cs-screen-item-placeholder"><span>Screen 4</span></div>
+          <img src="assets/case-studies/Instagram/hi-fi/close-friends-story-view.png" alt="Screen 4">
           <div class="cs-screen-item-caption">
             <strong>Screen name</strong>
             <p>What this screen does and why it's designed this way.</p>
@@ -226,20 +292,6 @@
 
       </div>
 
-      <!-- SINGLE ANNOTATED SCREEN — for a key moment you want to highlight -->
-      <div class="cs-screen-block">
-        <!-- <img src="images/cs-title-key-screen.png" alt="Key screen"> -->
-        <div class="cs-screen-block-placeholder">
-          <span>Key screen — the most important design decision in this project</span>
-        </div>
-        <div class="cs-screen-annotation">
-          <p class="cs-screen-annotation-label">Design decision</p>
-          <p>Explain the specific choice shown here — the pattern you used, why you chose it over alternatives, and what problem it solves for the user.</p>
-        </div>
-      </div>
-
-      <!-- Add more screen grids, before/afters, or annotated screens as needed -->
-      <!-- Each project is different — delete what you don't need, duplicate what you do -->
 
     </section>
 
