@@ -923,7 +923,7 @@ h1, h2, h3 {
 /* Before / After grid */
 .cs-before-after {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;
   margin: 40px 0;
 }
