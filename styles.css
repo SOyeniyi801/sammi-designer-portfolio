@@ -1458,143 +1458,171 @@ h1, h2, h3 {
    BOSE DETAIL PAGE
    ============================================ */
 
-.bose-body { max-width: 860px; }
+   .bose-body { max-width: 860px; }
 
-.bose-contributions {
-  display: flex;
-  flex-direction: column;
-  border-top: 1px solid var(--border);
-  margin-top: 24px;
-}
-
-.bose-contribution {
-  display: flex;
-  gap: 28px;
-  padding: 28px 0;
-  border-bottom: 1px solid var(--border);
-  align-items: flex-start;
-}
-
-.bose-contribution-num {
-  font-size: 11px;
-  font-weight: 500;
-  color: var(--muted);
-  letter-spacing: 0.08em;
-  padding-top: 5px;
-  flex-shrink: 0;
-  width: 24px;
-}
-
-.bose-contribution h3 {
-  font-size: 18px;
-  color: var(--charcoal);
-  margin-bottom: 8px;
-}
-
-.bose-contribution p {
-  font-size: 14px;
-  color: var(--mid);
-  line-height: 1.75;
-  margin: 0;
-}
-
-/* Page entries */
-.bose-page-entry {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: start;
-  padding: 40px 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.bose-page-entry:first-of-type { border-top: 1px solid var(--border); margin-top: 24px; }
-
-.bose-page-image {
-  border-radius: var(--r-lg);
-  overflow: hidden;
-  border: 1px solid var(--border);
-  background: var(--offwhite-2);
-}
-
-.bose-page-image img {
-  width: 100%;
-  display: block;
-  transition: transform 0.3s;
-}
-
-.bose-page-entry:hover .bose-page-image img { transform: scale(1.02); }
-
-.bose-page-placeholder {
-  width: 100%;
-  height: 220px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-  text-align: center;
-}
-
-.bose-page-placeholder span {
-  font-size: 13px;
-  color: var(--muted);
-  line-height: 1.7;
-}
-
-.bose-page-type {
-  font-size: 11px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--red);
-  display: block;
-  margin-bottom: 8px;
-}
-
-.bose-page-info h3 {
-  font-size: 20px;
-  color: var(--charcoal);
-  margin-bottom: 10px;
-}
-
-.bose-page-info p {
-  font-size: 14px;
-  color: var(--mid);
-  line-height: 1.75;
-  margin-bottom: 14px;
-}
-
-.bose-page-meta {
-  display: flex;
-  gap: 8px;
-  font-size: 12px;
-  color: var(--muted);
-}
-
-.bose-page-link {
-  display: inline-block;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--red);
-  margin-top: 8px;
-  transition: opacity 0.2s;
-}
-
-.bose-page-link:hover { opacity: 0.7; }
-
-/* Responsive additions */
-@media (max-width: 860px) {
-  .bose-layout { grid-template-columns: 1fr; gap: 40px; }
-  .bose-grid { height: 280px; }
-  .tech-grid { grid-template-columns: repeat(2, 1fr); }
-  .stack-section-header { flex-direction: column; align-items: flex-start; gap: 16px; }
-  .bose-page-entry { grid-template-columns: 1fr; gap: 20px; }
-}
-
-@media (max-width: 540px) {
-  .tech-grid { grid-template-columns: repeat(2, 1fr); }
-  .bose-grid { display: none; }
-}
+   .bose-contributions {
+     display: flex;
+     flex-direction: column;
+     border-top: 1px solid var(--border);
+     margin-top: 24px;
+   }
+   
+   .bose-contribution {
+     display: flex;
+     gap: 28px;
+     padding: 28px 0;
+     border-bottom: 1px solid var(--border);
+     align-items: flex-start;
+   }
+   
+   .bose-contribution-num {
+     font-size: 11px;
+     font-weight: 500;
+     color: var(--muted);
+     letter-spacing: 0.08em;
+     padding-top: 5px;
+     flex-shrink: 0;
+     width: 24px;
+   }
+   
+   .bose-contribution h3 {
+     font-size: 18px;
+     color: var(--charcoal);
+     margin-bottom: 8px;
+   }
+   
+   .bose-contribution p {
+     font-size: 14px;
+     color: var(--mid);
+     line-height: 1.75;
+     margin: 0;
+   }
+   
+   /* PUBLISHED WORK — image grid left, copy right */
+   .published-section { max-width: none; }
+   
+   .published-entry {
+     display: grid;
+     grid-template-columns: 7fr 3fr;
+     gap: 48px;
+     align-items: center;
+     padding: 48px 0;
+     border-bottom: 1px solid var(--border);
+   }
+   
+   .published-entry:first-of-type {
+     border-top: 1px solid var(--border);
+     margin-top: 24px;
+   }
+   
+   /* IMAGE GRID — wide top, two squares below */
+   .published-media {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: auto auto;
+     gap: 10px;
+   }
+   
+   .published-media-main {
+     grid-column: 1 / 3;     /* spans both columns — the wide top image */
+     border-radius: var(--r-lg);
+     overflow: hidden;
+     border: 1px solid var(--border);
+     background: var(--offwhite-2);
+     aspect-ratio: 16 / 10;
+   }
+   
+   .published-media-main img {
+     width: 100%;
+     height: 100%;
+     object-fit: fit;
+     display: block;
+     transition: transform 0.4s ease;
+   }
+   
+   .published-entry:hover .published-media-main img { transform: scale(1.03); }
+   
+   .published-media-thumb {
+     border-radius: var(--r-md);
+     overflow: hidden;
+     border: 1px solid var(--border);
+     background: var(--offwhite-2);
+     aspect-ratio: 1 / 1;     /* square */
+   }
+   
+   .published-media-thumb img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     display: block;
+   }
+   
+   /* TEXT COLUMN */
+   .published-info {
+     padding-left: 8px;
+   }
+   
+   .published-num {
+     font-size: 12px;
+     font-weight: 500;
+     color: var(--red);
+     letter-spacing: 0.06em;
+     display: block;
+     margin-bottom: 10px;
+   }
+   
+   .published-info h3 {
+     font-size: 26px;
+     color: var(--charcoal);
+     margin-bottom: 4px;
+     line-height: 1.2;
+   }
+   
+   .published-subtitle {
+     font-size: 14px;
+     font-weight: 500;
+     color: var(--charcoal-2);
+     margin-bottom: 14px;
+   }
+   
+   .published-desc {
+     font-size: 14px;
+     color: var(--mid);
+     line-height: 1.75;
+     margin-bottom: 16px;
+   }
+   
+   .published-meta {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     gap: 8px;
+     font-size: 12px;
+     color: var(--muted);
+   }
+   
+   .meta-dot { color: var(--red); }
+   
+   /* RESPONSIVE — stack, images first, then text */
+   @media (max-width: 860px) {
+     .bose-layout { grid-template-columns: 1fr; gap: 40px; }
+     .bose-grid { height: 280px; }
+     .tech-grid { grid-template-columns: repeat(2, 1fr); }
+     .stack-section-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+   
+     .published-entry {
+       grid-template-columns: 1fr;
+       gap: 24px;
+       padding: 40px 0;
+     }
+   
+     .published-info { padding-left: 0; }
+   }
+   
+   @media (max-width: 540px) {
+     .tech-grid { grid-template-columns: repeat(2, 1fr); }
+     .bose-grid { display: none; }
+   }
 
 /* ============================================
    MOBILE NAV
