@@ -116,25 +116,28 @@
     <!-- 02 THE PROBLEM -->
     <section class="cs-section">
       <h2>The problem</h2>
-      <p>Lead with the user. Who is affected, how often, and what's the real cost to them? Don't describe a missing feature — describe the experience of the gap.</p>
+      <p>WTTJ's job tracker treats application statuses as interchangeable labels instead of a hiring journey. As a result, users are presented with actions that don't match their current context, creating unnecessary decision making and inconsistent state transitions.</p>
+      <p>WTTJ's job tracker only supports active applications, leaving users without a way to document how a job search actually ends.</p>
     </section>
 
     <!-- 03 RESEARCH & INSIGHTS -->
     <section class="cs-section">
       <h2>Research & insights</h2>
-      <p>How did you validate this was a real problem? Conversations, Reddit, app store reviews, personal experience. Show the evidence.</p>
+      <p>As an active job seeker, I used WTTJ for several months and relied on the tracker to organize dozens of applications. Over time, I noticed that once a company rejected or ghosted me, there was no way to preserve that information.</p>
+      <p>A friend who was also actively job searching expressed the same frustration, specifically wanting a way to track rejected applications to avoid losing context.</p>
 
       <!-- Key insight callout -->
-      <!-- <div class="cs-callout">
-        <p>"Key quote or insight from your research — a Reddit comment, user quote, or observation that crystallized the problem."</p>
-      </div> -->
+      <div class="cs-callout">
+        <p>One app store review read</p>
+        <img src="assets/case-studies/wwtj/wwtj-review.jpg" alt="screenshot of app store review">
+      </div>
 
     </section>
 
     <!-- 04 CONSTRAINTS -->
     <section class="cs-section">
       <h2>Constraints</h2>
-      <p>What were you designing within? Platform patterns, existing design system, technical feasibility, user habits. This shows you understand design doesn't happen in a vacuum.</p>
+      <p>Welcome to the Jungle already has an established navigation model and visual language. Any new interaction needed to feel like a natural extension of the existing experience rather than introducing a new pattern for users to learn.</p>
       <ul>
         <li>Constraint one — explain the reasoning</li>
         <li>Constraint two — explain the reasoning</li>
@@ -145,18 +148,48 @@
     <!-- 05 EXPLORATION -->
     <section class="cs-section">
       <h2>Exploration</h2>
-      <p>What directions did you consider before landing on your solution? 2–3 alternatives and why you ruled them out. This is the most important signal of design maturity.</p>
+      <p>My first instinct was to capture every possible hiring outcome by introducing additional statuses such as Rejected, No Response, Interviewed No Offer, Declined Offer, and Contract Ended. While this approach successfully completed the application lifecycle, it also introduced unnecessary complexity. The growing number of statuses increased cognitive load and required users to actively maintain their tracker, ultimately working against the lightweight experience that makes Welcome to the Jungle so approachable.</p>
+      <p>Revisiting the project, I challenged whether users actually needed more statuses or simply a better way to preserve completed application cycles. That shift in thinking led me to focus on a simpler solution: extending the existing workflow rather than expanding it.</p>
+
+      <h3>Before</h3>
+
+      <div class="cs-image-block">
+        <div class="cs-screen-item">
+          <img src="assets/case-studies/wwtj/wwtj-current-screens/application-started.jpeg" alt="">
+          <div class="cs-screen-item-caption">
+            <strong>Application Started</strong>
+            <p>The saved option here is not needed. Since the application has started, the job is already being tracked.</p>
+          </div>
+        </div>
+
+        <div class="cs-screen-item">
+          <img src="assets/case-studies/wwtj/wwtj-current-screens/applied.jpeg" alt="">
+          <div class="cs-screen-item-caption">
+            <strong>Applied</strong>
+            <p>If a user has already applied to the role, saved and application started statuses are not needed. As you can see, the options are the same for both Applied and Interviewing.</p>
+          </div>
+      </div>
+      <div class="cs-screen-item">
+        <img src="assets/case-studies/wwtj/wwtj-current-screens/interviewing.jpeg" alt="">
+        <div class="cs-screen-item-caption">
+          <strong>Interviewing Options</strong>
+          <p>For someone who is currently interviewing, moving the status back to saved, application started or applied, simply wouldn't make sense.</p>
+        </div>
+    </div>
+      </div>
 
       <!-- Lo-fi wireframes — full width -->
-      <div class="cs-image-block">
-        <!-- <img src="images/cs-title-lofi.png" alt="Lo-fi wireframe exploration"> -->
-        <div class="cs-cover-placeholder" style="height:280px">
-          <span>Lo-fi wireframes — export from Figma</span>
-        </div>
+       <h3>Wireframing / Brain Dump</h3> </br>
+       <p>The images above compare the current status flow with the proposed update. Today, selecting Move presents users with nearly the same set of options regardless of where they are in the hiring process, allowing them to move backwards just as easily as they move forward.</p>
+       <p>My redesign introduces context-aware status transitions that better reflect the natural progression of a job search. As applications advance, irrelevant options are removed and only the most logical next steps remain. I also introduced a Rejected status, giving users a simple way to preserve completed application cycles and avoid losing valuable context throughout their job search.</p>
+      <div class="cs-image-block-wwtj">
+        <img src="assets/case-studies/wwtj/status-breakdown-before.png" alt="Lo-fi wireframe exploration">
       </div>
-      <p class="cs-image-caption">Early lo-fi exploration — [describe what's shown]</p>
+      <div class="cs-image-block-wwtj">
+        <img src="assets/case-studies/wwtj/status-breakdown-after.png" alt="Lo-fi wireframe exploration">
+      </div>
 
-      <p>After exploring [direction A] and [direction B], I landed on [final approach] because...</p>
+     
     </section>
 
     <!-- 06 DESIGN SOLUTION -->
@@ -165,24 +198,7 @@
       <p>Walk through your final design. Use the blocks below to show screens with explanations. You can mix and match — use as many or as few as each project needs.</p>
 
       <!-- BEFORE / AFTER -->
-      <div class="cs-before-after">
-        <div class="cs-before-after-item">
-          <!-- <img src="images/cs-title-before.png" alt="Before"> -->
-          <div class="cs-before-after-placeholder"><span>Before screen</span></div>
-          <div class="cs-before-after-caption">
-            <strong>Before</strong>
-            <p>Describe what was wrong with the original design.</p>
-          </div>
-        </div>
-        <div class="cs-before-after-item">
-          <!-- <img src="images/cs-title-after.png" alt="After"> -->
-          <div class="cs-before-after-placeholder"><span>After screen</span></div>
-          <div class="cs-before-after-caption">
-            <strong>After</strong>
-            <p>Describe what your redesign fixes and why you made this choice.</p>
-          </div>
-        </div>
-      </div>
+      
 
       <p>Explain the specific decision shown above — why this pattern, what you were optimizing for.</p>
 
@@ -190,58 +206,38 @@
       <div class="cs-screen-grid">
 
         <div class="cs-screen-item">
-          <!-- <img src="images/cs-title-screen-1.png" alt="Screen 1"> -->
-          <div class="cs-screen-item-placeholder"><span>Screen 1</span></div>
+          <img src="assets/case-studies/wwtj/wwtj-hifi/application-started-mockup.png" alt="Screen 1">
           <div class="cs-screen-item-caption">
-            <strong>Screen name</strong>
+            <strong>Application Started</strong>
             <p>What this screen does and why it's designed this way.</p>
           </div>
         </div>
 
         <div class="cs-screen-item">
-          <!-- <img src="images/cs-title-screen-2.png" alt="Screen 2"> -->
-          <div class="cs-screen-item-placeholder"><span>Screen 2</span></div>
+          <img src="assets/case-studies/wwtj/wwtj-hifi/applied-mockup.png" alt="Screen 2">
           <div class="cs-screen-item-caption">
-            <strong>Screen name</strong>
+            <strong>Appliede</strong>
             <p>What this screen does and why it's designed this way.</p>
           </div>
         </div>
 
         <div class="cs-screen-item">
-          <!-- <img src="images/cs-title-screen-3.png" alt="Screen 3"> -->
-          <div class="cs-screen-item-placeholder"><span>Screen 3</span></div>
+          <img src="assets/case-studies/wwtj/wwtj-hifi/interviewing-mockup.png" alt="Screen 3">
           <div class="cs-screen-item-caption">
-            <strong>Screen name</strong>
+            <strong>Interviewing</strong>
             <p>What this screen does and why it's designed this way.</p>
           </div>
         </div>
 
         <div class="cs-screen-item">
-          <!-- <img src="images/cs-title-screen-4.png" alt="Screen 4"> -->
-          <div class="cs-screen-item-placeholder"><span>Screen 4</span></div>
+          <img src="assets/case-studies/wwtj/wwtj-hifi/rejected-mockup.png" alt="Screen 4">
           <div class="cs-screen-item-caption">
-            <strong>Screen name</strong>
+            <strong>Rejected</strong>
             <p>What this screen does and why it's designed this way.</p>
           </div>
         </div>
 
-      </div>
-
-      <!-- SINGLE ANNOTATED SCREEN — for a key moment you want to highlight -->
-      <div class="cs-screen-block">
-        <!-- <img src="images/cs-title-key-screen.png" alt="Key screen"> -->
-        <div class="cs-screen-block-placeholder">
-          <span>Key screen — the most important design decision in this project</span>
-        </div>
-        <div class="cs-screen-annotation">
-          <p class="cs-screen-annotation-label">Design decision</p>
-          <p>Explain the specific choice shown here — the pattern you used, why you chose it over alternatives, and what problem it solves for the user.</p>
-        </div>
-      </div>
-
-      <!-- Add more screen grids, before/afters, or annotated screens as needed -->
-      <!-- Each project is different — delete what you don't need, duplicate what you do -->
-
+      </div>      
     </section>
 
     <!-- OPTIONAL: Company / external response — use for WTTJ -->
@@ -262,7 +258,7 @@
     <!-- BOTTOM NAV -->
     <div class="cs-nav">
       <a href="index.html#work" class="cs-nav-link">← All work</a>
-      <a href="case-study-next.html" class="cs-nav-link">Next case study →</a>
+      <a href="case-study-hinge.html" class="cs-nav-link">Next case study →</a>
     </div>
 
   </div><!-- end cs-body -->
