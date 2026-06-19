@@ -80,6 +80,11 @@ h1, h2, h3 {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+.nav.nav--hidden {
+  transform: translateY(-100%);
 }
 
 .nav-logo {

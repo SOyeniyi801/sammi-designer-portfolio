@@ -462,6 +462,43 @@
     mobileMenu.addEventListener('click', (e) => {
       if (e.target === mobileMenu) closeMenu();
     });
+    // Hide nav on scroll down, show on scroll up
+let lastScrollY = window.scrollY;
+let navHidden = false;
+const navEl = document.querySelector('.nav');
+
+function handleNavScroll() {
+  const currentScrollY = window.scrollY;
+
+  // Always show nav near the top of the page
+  if (currentScrollY < 80) {
+    navEl.classList.remove('nav--hidden');
+    navHidden = false;
+    lastScrollY = currentScrollY;
+    return;
+  }
+
+  const scrollingDown = currentScrollY > lastScrollY;
+
+  if (scrollingDown && !navHidden) {
+    navEl.classList.add('nav--hidden');
+    navHidden = true;
+  } else if (!scrollingDown && navHidden) {
+    navEl.classList.remove('nav--hidden');
+    navHidden = false;
+  }
+
+  lastScrollY = currentScrollY;
+}
+
+window.addEventListener('scroll', handleNavScroll, { passive: true });
+function openMenu() {
+  mobileMenu.classList.add('is-open');
+  hamburger.classList.add('is-active');
+  hamburger.setAttribute('aria-expanded', 'true');
+  document.body.style.overflow = 'hidden';
+  navEl.classList.remove('nav--hidden'); // keep nav visible while menu is open
+}
   </script>
 
 </body>
