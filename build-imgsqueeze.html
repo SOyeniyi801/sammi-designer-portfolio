@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ImgSqueeze — Sammi Oyeniyi</title>
+  <link rel="icon" type="image/x-icon" href="assets/resume-favicon.png">
+  <meta name="description" content="ImgSqueeze — a Progressive Web App for photographers: batch compression, watermarking, renaming, and export. Built by Sammi Oyeniyi.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a href="index.html" class="nav-logo">Sammi Oyeniyi | <span>UX Designer</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#work">Case Studies</a></li>
+      <li><a href="index.html#builds">Builds</a></li>
+      <li><a href="index.html#bose">Bose</a></li>
+      <li><a href="index.html#thinking">Writing</a></li>
+      <li><a href="index.html#beyond">Beyond</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="assets/sam-oyeniyi-product-designer-resume.pdf" class="nav-resume" download>Resume ↓</a></li>
+    </ul>
+    <!-- Mobile controls -->
+    <div class="nav-mobile-controls">
+      <a href="assets/sam-oyeniyi-product-designer-resume.pdf" class="nav-resume nav-resume--mobile" download>Resume ↓</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu overlay -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-menu-inner">
+      <a href="index.html#work"     class="mobile-link" onclick="closeMenu()">Work</a>
+      <a href="index.html#builds"   class="mobile-link" onclick="closeMenu()">Builds</a>
+      <a href="index.html#bose"     class="mobile-link" onclick="closeMenu()">Bose</a>
+      <a href="index.html#thinking" class="mobile-link" onclick="closeMenu()">Writing</a>
+      <a href="index.html#beyond"   class="mobile-link" onclick="closeMenu()">Beyond</a>
+      <a href="index.html#contact"  class="mobile-link" onclick="closeMenu()">Contact</a>
+      <a href="assets/sam-oyeniyi-product-designer-resume.pdf" class="mobile-link mobile-link--resume" download>Resume ↓</a>
+    </nav>
+  </div>
+
+  <div class="cs-page">
+
+    <!-- HERO -->
+    <section class="cs-hero-section">
+      <div class="panel-inner">
+        <a href="index.html#builds" class="cs-back">← Back to builds</a>
+        <p class="eyebrow">Prototype · Progressive Web App</p>
+        <h1>ImgSqueeze: a batch photo tool built for how photographers actually work</h1>
+        <p class="cs-hero-sub">A lightweight PWA that compresses, watermarks, renames, and exports photos in bulk — designed to install straight to a phone or desktop, with no app store required.</p>
+
+        <div class="cs-meta">
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Role</span>
+            <span class="cs-meta-value">Design & Development</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Stack</span>
+            <span class="cs-meta-value">React · Vite · vite-plugin-pwa · Canvas API</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Status</span>
+            <span class="cs-meta-value">Live, deployed on Vercel</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Platform</span>
+            <span class="cs-meta-value">Installable web app (iOS, Android, desktop)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COVER IMAGE -->
+    <div class="cs-cover-image">
+      <img src="assets/case-studies/img-squeeze/imagesqueeze-cover.jpg" alt="ImageSqueeze app interface">
+    </div>
+
+    <!-- BODY -->
+    <div class="cs-body">
+
+      <div class="cs-section">
+        <h2>The problem</h2>
+        <p>Anyone who works with image files understands the tedious prep work that comes with every batch: compressing large files, adding watermarks, renaming images consistently, and exporting everything somewhere usable.</p>
+        <p>Existing tools often handle only one part of the process, add usage limits, only work in the browser, or require larger editing software like Adobe Lightroom Classic.</p>
+        <p>I wanted to create a tool that made this workflow faster and more accessible across devices.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2>Validation</h2>
+        <div class="cs-section">
+          <p>I was not the only person with this problem.</p>
+          <p> <a class="link" href="https://www.reddit.com/r/Wordpress/comments/j2h67q/one_plugin_for_image_compression_and_adding_a/" target="_blank" rel="noopener noreferrer">A Reddit post</a> in the WordPress community asked for a single tool that could handle both image compression and watermarking. The comments suggested multiple tools, but no clear option handled everything without limits or extra steps.</p>
+          <p>The tools existed. The workflow was still fragmented.</p>
+        </div>
+      </div>
+
+      <div class="cs-callout">
+        <p>The whole point was to remove friction. If a photographer has to think about the tool, the tool is in the way.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2>Similar Tools</h2>
+        <p>I reviewed existing tools like Watermarkly, which offers both image compression and watermarking.</p>
+        <p>However, each feature exists as a separate workflow. To compress and watermark the same images, users have to compress, save, re-upload, watermark, and save again.</p>
+        <p>Some controls also rely heavily on dropdowns and counters, adding unnecessary clicks for simple adjustments.</p>
+      </div>
+
+      
+
+      <div class="cs-section">
+        <h2>How It Works</h2>
+        <p>Users can upload one or multiple images and:</p>
+       <ul>
+        <li>Use preset compression options or choose a custom amount</li>
+        <li>Add a text or image watermark</li>
+        <li>Save watermark settings locally for future use</li>
+        <li>Rename batch exports with sequential numbering</li>
+        <li>Preview changes in real time</li>
+        <li>Export finished images</li>
+       </ul>
+      </div>
+
+      <!-- <div class="cs-callout-highlight">
+        <p>Getting iOS Safari's install and file-handling quirks to feel seamless was the real technical win of this build — it's the difference between a PWA that works in theory and one people actually use.</p>
+      </div> -->
+
+      <div class="cs-section">
+        <h2>Design & Dev Choices</h2>
+        <h3>Simple interface</h3>
+        <p>The design is intentionally minimal and easy to navigate, keeping the focus on the images and the task at hand.</p>
+        <h3>Sliders over counters</h3>
+        <p>Compression settings use a slider instead of counters, reducing clicks and making adjustments easier on mobile.</p>
+        <h3>Collapsible controls</h3>
+        <p>Settings are grouped into collapsible drawers to reduce clutter and keep the interface focused.</p>
+        <h3>PWA access</h3>
+        <p>ImqSqueeze was built as a Progressive Web App so users can access it across devices and install it for a more app-like experience.</p>
+        <h3>Real-time preview</h3>
+        <p>Changes automatically update in the preview so users can see the result before exporting.</p>
+        <h3>Watermark customization</h3>
+        <p>Users can add text or image watermarks, adjust their appearance, and save watermark settings locally for future use.</p>
+        <h3>Mobile exporting</h3>
+        <p>The original mobile workflow downloaded images as files. On iOS, this added extra steps because images were saved to browser downloads instead of the photo library.</p> <p> I switched to the Web Share API so users could access native sharing options and more easily save or send images on mobile.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2>Tech Build</h2>
+        <p>ImqSqueeze was built with React and Vite, using vite-plugin-pwa for installable PWA functionality.</p>
+        <p>The Canvas API handles watermark rendering, while browser-image-compression compresses images locally in the browser.</p>
+        <p>JSZip packages batch exports, and the Web Share API improves the mobile export experience by using the device’s native sharing options.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2>Real-World Feedback</h2>
+        <p>I shared ImqSqueeze on social media while building and received early interest from photographers who recognized the workflow problem.</p>
+        <p>The tool is currently being tested by users while I collect feedback on usability, mobile behavior, and the overall image prep workflow.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2>Building With AI: My Approach</h2>
+        <p>I used AI throughout development to explore implementation options, debug issues, and move quickly from idea to working product.</p>
+        <p>My approach was to treat AI as a collaborator, not the decision-maker. I defined the problem, chose the features, tested the workflows, reviewed the code, and continuously evaluated the output through both a design and development lens. The first iteration worked, but it was clunky and hard to navigate. I continued refining the product based on usability, visual hierarchy, cross-device behavior, and the overall experience I wanted to create.</p>
+        <p>AI helped me move faster, but I remained responsible for deciding what worked, what needed to change, and how the final product should function and feel.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2>Try ImqSqueeze</h2>
+        <p>ImqSqueeze can be used directly in your browser or installed on your device for a more app-like experience.</p>
+        <h3>On Iphone or Ipad</h3>
+        <ol>
+          <li>Open ImqSqueeze in Safari</li>
+          <li>Tap the Share button</li>
+          <li>Select Add to Home Screen</li>
+          <li>Tap Add</li>
+        </ol>
+<br>
+        <h3>On Andriod</h3>
+        <ol>
+          <li>Open ImqSqueeze in Chrome</li>
+          <li>Tap the three-dot menu</li>
+          <li>Select Add to Home screen or Install app</li>
+          <li>Follow the prompt to install</li>
+        </ol>
+        <br>
+
+        <h3>On Desktop</h3>
+        <p>Open ImqSqueeze in a supported browser and select the Install option in the address bar when available.</p>
+      </div>
+
+<a class="link" href="https://imgsqueeze-weld.vercel.app/" target="_blank" rel="noopener noreferrer">Try ImgSqueeze here</a>
+      <div class="cs-nav">
+        <a href="index.html#builds" class="cs-nav-link">← Back to all builds</a>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.contains('is-open');
+      if (isOpen) { closeMenu(); } else { openMenu(); }
+    });
+
+    function openMenu() {
+      mobileMenu.classList.add('is-open');
+      hamburger.classList.add('is-active');
+      hamburger.setAttribute('aria-expanded', 'true');
+      mobileMenu.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      mobileMenu.classList.remove('is-open');
+      hamburger.classList.remove('is-active');
+      hamburger.setAttribute('aria-expanded', 'false');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    // Close on outside click
+    mobileMenu.addEventListener('click', (e) => {
+      if (e.target === mobileMenu) closeMenu();
+    });
+
+    // Hide nav on scroll down, show on scroll up
+    let lastScrollY = window.scrollY;
+    let navHidden = false;
+    const navEl = document.querySelector('.nav');
+
+    function handleNavScroll() {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY < 80) {
+        navEl.classList.remove('nav--hidden');
+        navHidden = false;
+        lastScrollY = currentScrollY;
+        return;
+      }
+
+      const scrollingDown = currentScrollY > lastScrollY;
+
+      if (scrollingDown && !navHidden) {
+        navEl.classList.add('nav--hidden');
+        navHidden = true;
+      } else if (!scrollingDown && navHidden) {
+        navEl.classList.remove('nav--hidden');
+        navHidden = false;
+      }
+
+      lastScrollY = currentScrollY;
+    }
+
+    window.addEventListener('scroll', handleNavScroll, { passive: true });
+  </script>
+
+</body>
+</html>

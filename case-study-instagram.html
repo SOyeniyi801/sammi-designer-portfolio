@@ -15,23 +15,30 @@
   <header class="nav">
     <a href="index.html" class="nav-logo">Sammi Oyeniyi | <span>UX Designer</span></a>
     <ul class="nav-links">
-      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#work">Case Studies</a></li>
+      <li><a href="index.html#builds">Builds</a></li>
       <li><a href="index.html#bose">Bose</a></li>
       <li><a href="index.html#thinking">Writing</a></li>
       <li><a href="index.html#beyond">Beyond</a></li>
       <li><a href="index.html#contact">Contact</a></li>
       <li><a href="assets/sam-oyeniyi-product-designer-resume.pdf" class="nav-resume" download>Resume ↓</a></li>
     </ul>
+    <!-- Mobile controls -->
     <div class="nav-mobile-controls">
       <a href="assets/sam-oyeniyi-product-designer-resume.pdf" class="nav-resume nav-resume--mobile" download>Resume ↓</a>
       <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
     </div>
   </header>
+
+  <!-- Mobile menu overlay -->
   <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
     <nav class="mobile-menu-inner">
       <a href="index.html#work"     class="mobile-link" onclick="closeMenu()">Work</a>
+      <a href="index.html#builds"   class="mobile-link" onclick="closeMenu()">Builds</a>
       <a href="index.html#bose"     class="mobile-link" onclick="closeMenu()">Bose</a>
       <a href="index.html#thinking" class="mobile-link" onclick="closeMenu()">Writing</a>
       <a href="index.html#beyond"   class="mobile-link" onclick="closeMenu()">Beyond</a>

@@ -13,15 +13,15 @@
 </head>
 <body>
 
-  <!-- NAV -->
   <header class="nav">
     <a href="index.html" class="nav-logo">Sammi Oyeniyi | <span>UX Designer</span></a>
     <ul class="nav-links">
-      <li><a href="#work">Work</a></li>
-      <li><a href="#bose">Bose</a></li>
-      <li><a href="#thinking">Writing</a></li>
-      <li><a href="#beyond">Beyond</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="index.html#work">Case Studies</a></li>
+      <li><a href="index.html#builds">Builds</a></li>
+      <li><a href="index.html#bose">Bose</a></li>
+      <li><a href="index.html#thinking">Writing</a></li>
+      <li><a href="index.html#beyond">Beyond</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
       <li><a href="assets/sam-oyeniyi-product-designer-resume.pdf" class="nav-resume" download>Resume ↓</a></li>
     </ul>
     <!-- Mobile controls -->
@@ -38,11 +38,12 @@
   <!-- Mobile menu overlay -->
   <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
     <nav class="mobile-menu-inner">
-      <a href="#work"     class="mobile-link" onclick="closeMenu()">Work</a>
-      <a href="#bose"     class="mobile-link" onclick="closeMenu()">Bose</a>
-      <a href="#thinking" class="mobile-link" onclick="closeMenu()">Writing</a>
-      <a href="#beyond"   class="mobile-link" onclick="closeMenu()">Beyond</a>
-      <a href="#contact"  class="mobile-link" onclick="closeMenu()">Contact</a>
+      <a href="index.html#work"     class="mobile-link" onclick="closeMenu()">Work</a>
+      <a href="index.html#builds"   class="mobile-link" onclick="closeMenu()">Builds</a>
+      <a href="index.html#bose"     class="mobile-link" onclick="closeMenu()">Bose</a>
+      <a href="index.html#thinking" class="mobile-link" onclick="closeMenu()">Writing</a>
+      <a href="index.html#beyond"   class="mobile-link" onclick="closeMenu()">Beyond</a>
+      <a href="index.html#contact"  class="mobile-link" onclick="closeMenu()">Contact</a>
       <a href="assets/sam-oyeniyi-product-designer-resume.pdf" class="mobile-link mobile-link--resume" download>Resume ↓</a>
     </nav>
   </div>
@@ -165,6 +166,58 @@
       </div>
     </section>
 
+    <!-- PANEL: BUILDS / PROTOTYPES -->
+    <!--
+      To add next week's project:
+      1. Duplicate the ".build-card" block below (not the ".build-card--empty" one).
+      2. Point its <a href> at the new project's detail page (e.g. build-<name>.html).
+      3. Swap the image, eyebrow, title, description, and tags.
+      4. Copy build-imageprep.html as a starting template for the new detail page.
+      The dashed "next build" card can stay as the last item, or be removed once
+      you're not actively teasing an upcoming project.
+    -->
+    <section class="panel panel-builds" id="builds">
+      <div class="panel-inner">
+        <div class="section-header">
+          <p class="eyebrow">Prototypes</p>
+          <h2>Built, not just designed</h2>
+          <p>Side projects I designed and shipped myself — real, working products, not just mockups. Currently focused on progressive web apps.</p>
+        </div>
+
+        <div class="builds-grid">
+
+          <!-- BUILD 1: ImagePrep -->
+          <a href="build-imgsqueeze.html" class="build-card">
+            <div class="build-card-image">
+              <span class="build-status"><span class="build-status-dot"></span> Live</span>
+              <img src="assets/imgsqueeze-hp.jpg" alt="ImgSqueeze app screenshot">
+            </div>
+            <div class="build-card-body">
+              <p class="build-card-eyebrow">Progressive Web App</p>
+              <h3>ImgSqueeze</h3>
+              <p>A batch photo tool for photographers — compression, watermarking, renaming, and export, all in one lightweight PWA that installs straight to your phone.</p>
+              <div class="tags">
+                <span class="tag">React</span>
+                <span class="tag">Canvas API</span>
+                <span class="tag">PWA</span>
+              </div>
+              <span class="work-cta">View project →</span>
+            </div>
+          </a>
+
+          <!-- NEXT BUILD — placeholder slot, swap for the next project card -->
+          <div class="build-card build-card--empty">
+            <div class="build-card--empty-inner">
+              <span>🛠️</span>
+              <strong>Next build in progress</strong>
+              <p>A new prototype is on the way — check back soon.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- PANEL: BOSE -->
     <section class="panel panel-bose" id="bose">
       <div class="panel-inner">
@@ -257,8 +310,6 @@
           </a>
         </div>
       </div>
-    </section>
-
     </section>
 
     <!-- PANEL: TECH STACK + RESUME -->
