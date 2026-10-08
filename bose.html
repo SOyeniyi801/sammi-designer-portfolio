@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bose — Sammi Oyeniyi</title>
-  <link rel="icon" type="image/x-icon" href="assets/resume-favicon.png">
-  <meta name="description" content="Web content and design work at Bose — global e-commerce and marketing pages.">
+  <title>UX Design at Bose — Sammi Oyeniyi</title>
+  <meta name="description" content="Explore Sammi Oyeniyi's UX design contributions at Bose across product discovery, customer acquisition, and enterprise e-commerce experiences.">
+  <link rel="icon" href="assets/resume-favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="bose-landing.css">
 </head>
-<body class="cs-page">
-
+<body class="cs-page bose-landing-page">
+  <a class="bose-skip" href="#main-content">Skip to content</a>
   <header class="nav">
     <a href="index.html" class="nav-logo">Sammi Oyeniyi | <span>UX Designer</span></a>
     <ul class="nav-links">
@@ -24,312 +25,110 @@
       <li><a href="index.html#contact">Contact</a></li>
       <li><a href="assets/s-oyeniyi-ux-designer.pdf" class="nav-resume" download>Resume ↓</a></li>
     </ul>
-    <!-- Mobile controls -->
     <div class="nav-mobile-controls">
       <a href="assets/s-oyeniyi-ux-designer.pdf" class="nav-resume nav-resume--mobile" download>Resume ↓</a>
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
     </div>
   </header>
-
-  <!-- Mobile menu overlay -->
   <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
     <nav class="mobile-menu-inner">
-      <a href="index.html#work"     class="mobile-link" onclick="closeMenu()">Work</a>
-      <a href="index.html#builds"   class="mobile-link" onclick="closeMenu()">Builds</a>
-      <a href="index.html#bose"     class="mobile-link" onclick="closeMenu()">Bose</a>
-      <a href="index.html#thinking" class="mobile-link" onclick="closeMenu()">Writing</a>
-      <a href="index.html#beyond"   class="mobile-link" onclick="closeMenu()">Beyond</a>
-      <a href="index.html#contact"  class="mobile-link" onclick="closeMenu()">Contact</a>
-      <a href="assets/s-oyeniyi-ux-designer.pdf" class="mobile-link mobile-link--resume" download>Resume ↓</a>
+      <a href="index.html#work" class="mobile-link">Work</a>
+      <a href="index.html#builds" class="mobile-link">Builds</a>
+      <a href="index.html#bose" class="mobile-link">Bose</a>
+      <a href="index.html#thinking" class="mobile-link">Writing</a>
+      <a href="index.html#beyond" class="mobile-link">Beyond</a>
+      <a href="index.html#contact" class="mobile-link">Contact</a>
     </nav>
   </div>
-
-
-  <!-- PAGE HERO -->
-  <section class="cs-hero-section">
-    <div class="panel-inner">
-      <a href="index.html#bose" class="cs-back">← Back</a>
-      <p class="eyebrow">Professional work · In production</p>
-      <h1>Web content & design at Bose</h1>
-      <p class="cs-hero-sub">Real pages, published at scale, for a global audio brand. As part of a four-person cross-functional team I helped build, QA, and maintain e-commerce and marketing content across six global sites.</p>
-      <div class="tags">
-        <span class="tag">Content management</span>
-        <span class="tag">E-commerce</span>
-        <span class="tag">QA & testing</span>
-        <span class="tag">Global scale</span>
-      </div>
-      <div class="cs-meta">
-        <div class="cs-meta-item">
-          <span class="cs-meta-label">Role</span>
-          <span class="cs-meta-value">UX / Web Designer</span>
-        </div>
-        <div class="cs-meta-item">
-          <span class="cs-meta-label">Company</span>
-          <span class="cs-meta-value">Bose (Contract)</span>
-        </div>
-        <div class="cs-meta-item">
-          <span class="cs-meta-label">Tools</span>
-          <span class="cs-meta-value">Contentstack · AEM · Jira · Salesforce Commerce Cloud</span>
-        </div>
-        <div class="cs-meta-item">
-          <span class="cs-meta-label">Duration</span>
-          <span class="cs-meta-value">Nov 2025 – June 2026</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- OVERVIEW -->
-  <div class="cs-body bose-body">
-
-    <section class="cs-section">
-      <h2>The work</h2>
-      <p>Bose delivers immersive audio experiences across a global e-commerce and marketing web presence. As part of a lean four-person team, I work directly with cross-functional stakeholders — marketing, UX, engineering, and external agency partners — to publish and maintain content that spans product launches, influencer collaborations, and seasonal campaigns.</p>
-      <p>All updates and changes are managed through Jira to ensure clear ticketing, workflow organization, and accountability across the team.</p>
-    </section>
-
-    <!-- WHAT I DID -->
-    <section class="cs-section">
-      <h2>My contributions</h2>
-      <div class="bose-contributions">
-        <div class="bose-contribution">
-          <span class="bose-contribution-num">01</span>
-          <div>
-            <h3>CMS content publishing</h3>
-            <p>Translated approved design and content requirements into structured, scalable configurations in Contentstack and Adobe Experience Manager, ensuring consistency across preview, staging, and production environments.</p>
+  <main id="main-content">
+    <section class="bose-landing-hero">
+      <div class="bose-landing-wrap bose-landing-hero-grid">
+        <div class="bose-landing-hero-copy">
+          <a class="cs-back" href="index.html#bose">← Back to portfolio</a>
+          <p class="eyebrow">Professional UX work · Bose · 2025–2026</p>
+          <h1>Designing where <em>ideas meet production.</em></h1>
+          <p class="bose-landing-lede">My work at Bose brought together product thinking, visual design, and technical execution. As part of a four-person team, I collaborated across UX, marketing, and engineering to turn campaign and commerce requirements into responsive experiences customers could actually use.</p>
+          <div class="bose-landing-meta">
+            <div><span>Role</span><strong>UX / Web Designer</strong></div>
+            <div><span>Environment</span><strong>Cross-functional team</strong></div>
+            <div><span>Platforms</span><strong>Figma · Contentstack · Jira · AEM</strong></div>
+            <div><span>Scope</span><strong>Six global sites</strong></div>
           </div>
         </div>
-        <div class="bose-contribution">
-          <span class="bose-contribution-num">02</span>
-          <div>
-            <h3>QA & cross-environment testing</h3>
-            <p>Defined and executed QA processes to validate accessibility, layout consistency, and design fidelity across environments, catching and resolving issues before they reached production.</p>
-          </div>
-        </div>
-        <div class="bose-contribution">
-          <span class="bose-contribution-num">03</span>
-          <div>
-            <h3>Platform migration support</h3>
-            <p>Led content and design translation for Bose's migration from Adobe Experience Manager to Salesforce Commerce Cloud across six global sites. Established cross-functional workflows to keep UX, engineering, and marketing aligned through a smooth, on-time launch.</p>
-          </div>
-        </div>
-        <div class="bose-contribution">
-          <span class="bose-contribution-num">04</span>
-          <div>
-            <h3>Influencer & campaign collaborations</h3>
-            <p>Owned end-to-end design execution for high-profile campaign collaborations including Coco Gauff, BonBon, and KidSuper, balancing Bose's design system standards with each partner's brand identity and campaign goals.</p>
-          </div>
-        </div>
-        <div class="bose-contribution">
-          <span class="bose-contribution-num">05</span>
-          <div>
-            <h3>SEO & content structure</h3>
-            <p>Advised on information architecture and content structure, implementing structured metadata, title tags, meta descriptions, and clean URL [patterns...]. Send me the rest of this one and I'll finish it in the same voice.</p>
-          </div>
-        </div>
-        <div class="bose-contribution">
-          <span class="bose-contribution-num">06</span>
-          <div>
-            <h3>Early design validation</h3>
-            <p>Collaborated with UX during early design reviews to evaluate proposed layouts, interactions, and component patterns against CMS capabilities, identifying constraints before development and recommending scalable alternatives that preserved the intended user experience.</p>
-          </div>
+        <div class="bose-landing-hero-media" aria-label="Selected Bose production work">
+          <figure class="bose-landing-mosaic-tall"><img src="assets/bose/bose-hp.png" alt="Bose e-commerce page screenshot" loading="eager"></figure>
+          <figure><img src="../assets/bose/bose-kidsuper-three.png" alt="Bose KidSuper campaign imagery" loading="lazy"></figure>
+          <figure><img src="../assets/bose/bose-bonbon-two.png" alt="Bose BonBon campaign imagery" loading="lazy"></figure>
         </div>
       </div>
     </section>
 
-    <!-- PUBLISHED WORK — editorial layout -->
-    <section class="cs-section published-section">
-      <h2>Published work</h2>
-      <p>A selection of live pages I helped build and publish across Bose's global web presence. Each entry includes the page type and my specific role in bringing it to life.</p>
-
-      <!-- ENTRY 01 -->
-      <div class="published-entry">
-        <div class="published-media">
-          <div class="published-media-main">
-            <img src="assets/bose/bose-bonbon-hero-one.png" alt="Bose × BonBon Valentine's Day campaign hero">
-          </div>
-          <div class="published-media-thumb">
-            <img src="assets/bose/bose-bonbon-two.png" alt="Bose × BonBon gift set">
-          </div>
-          <div class="published-media-thumb">
-            <img src="assets/bose/bose-bonbon-three.png" alt="Bose × BonBon product detail">
-          </div>
+    <section class="bose-landing-section bose-landing-context" aria-labelledby="how-i-worked">
+      <div class="bose-landing-wrap bose-landing-context-grid">
+        <div>
+          <p class="eyebrow">The role</p>
+          <h2 id="how-i-worked">Designing within a real product ecosystem.</h2>
         </div>
-        <div class="published-info">
-          <span class="published-num">01</span>
-          <h3>Bose × BonBon</h3>
-          <p class="published-subtitle">Valentine's Day Limited Edition</p>
-          <p class="published-desc">A limited-edition collaboration between Bose and New York candy brand BonBon, transforming a product launch into an immersive Valentine's Day campaign through custom packaging, exclusive giveaways, and editorial storytelling.</p>
-          <div class="published-meta">
-            <span>Campaign Site</span>
-            <span class="meta-dot">•</span>
-            <span>Giveaway</span>
-            <span class="meta-dot">•</span>
-            <span>Product Content</span>
-          </div>
+        <div class="bose-landing-prose">
+          <p>At Bose, design work didn't end at a Figma handoff. Every experience had to fit existing components, support customers across devices, and hold up through implementation and QA.</p>
+          <p>My role bridged early design reviews and production: assessing layouts against system constraints, refining copy and image placement, building within established CMS patterns, and partnering with teammates to resolve issues before release.</p>
         </div>
       </div>
-
-      <!-- ENTRY 02 -->
-      <div class="published-entry">
-        <div class="published-media">
-          <div class="published-media-main">
-            <img src="assets/bose/bose-ith-one.png" alt="Bose in the home campaign hero">
-          </div>
-          <div class="published-media-thumb">
-            <img src="assets/bose/bose-ith-two.png" alt="Bose in the home campaign hero">
-          </div>
-          <div class="published-media-thumb">
-            <img src="assets/bose/bose-ith-three.png" alt="Bose in the home campaign hero">
-          </div>
-        </div>
-        <div class="published-info">
-          <span class="published-num">02</span>
-          <h3>Bose In the Home Lifestyle Launch</h3>
-          <p class="published-subtitle">Global Launch</p>
-          <p class="published-desc">A global campaign introducing Bose's newest connected home audio ecosystem, showcasing how three flagship products work together to create a seamless, room-to-room listening experience.</p>
-          <div class="published-meta">
-            <span>Product Page</span>
-            <span class="meta-dot">•</span>
-            <span>Global Launch</span>
-            <span class="meta-dot">•</span>
-            <span>Product Launch</span>
-          </div>
-        </div>
+      <div class="bose-landing-wrap bose-landing-capabilities">
+        <article><span>01 / Design collaboration</span><h3>Refine the experience</h3><p>Review layouts with UX and campaign partners; identify practical changes to hierarchy, imagery, and content placement.</p></article>
+        <article><span>02 / Systems thinking</span><h3>Design within constraints</h3><p>Work with approved components and patterns so distinctive campaigns still feel coherent across the wider shopping experience.</p></article>
+        <article><span>03 / Responsive QA</span><h3>Protect the details</h3><p>Check content hierarchy, image crops, accessibility considerations, and design fidelity across desktop and mobile.</p></article>
+        <article><span>04 / Cross-functional delivery</span><h3>Help teams ship</h3><p>Coordinate in Jira with marketing, UX, and engineering through review, implementation, troubleshooting, and launch preparation.</p></article>
       </div>
-
-      <!-- ENTRY 03 -->
-      <div class="published-entry">
-        <div class="published-media">
-          <div class="published-media-main">
-            <img src="assets/bose/bose-kidsuper-one.png" alt="Bose × KidSuper campaign hero">
-          </div>
-          <div class="published-media-thumb">
-            <img src="assets/bose/bose-kidsuper-two.png" alt="Bose × Kidsuper lifestyle">
-          </div>
-          <div class="published-media-thumb">
-            <img src="assets/bose/bose-kidsuper-three.png" alt="Bose × Kidsuper lifestyle">
-          </div>
-        </div>
-        <div class="published-info">
-          <span class="published-num">03</span>
-          <h3>Bose × KidSuper</h3>
-          <p class="published-subtitle">Limited Edition Collaboration</p>
-          <p class="published-desc">A limited-edition collaboration between Bose and fashion designer KidSuper, combining exclusive artwork, immersive storytelling, and ecommerce into a collectible product experience inspired by the spirit of soccer.</p>
-          <div class="published-meta">
-            <span>Campaign Site</span>
-            <span class="meta-dot">•</span>
-            <span>Limited Release</span>
-            <span class="meta-dot">•</span>
-            <span>Product Content</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Duplicate a .published-entry block above for each additional page -->
-
     </section>
 
-    <section class="cs-section">
-      <h2>What this work shows</h2>
-      <p>Working at Bose taught me how to ship at scale. From global platform migrations to limited-edition brand collaborations, every release required balancing design systems, content strategy, engineering constraints, and cross-functional communication while keeping dozens of moving pieces aligned.</p>
-      <p>It's also where my support engineering background became directly useful. Understanding how CMS systems, staging environments, and deployment pipelines work meant I could troubleshoot faster, communicate more precisely with engineering, and anticipate problems before they hit production.</p>
+    <section class="bose-landing-section bose-landing-projects" aria-labelledby="selected-projects">
+      <div class="bose-landing-wrap">
+        <div class="bose-landing-section-header">
+          <p class="eyebrow">Selected case studies</p>
+          <h2 id="selected-projects">The work, up close.</h2>
+          <p>Two collaborations. Two different business problems. Both designed within Bose's live digital ecosystem.</p>
+        </div>
+        <div class="bose-landing-project-list">
+          <a class="bose-landing-project" href="bose/case-study-bonbon.html" aria-label="Read Bose BonBon case study">
+            <div class="bose-landing-project-copy">
+              <div class="bose-landing-project-number">01 <span>Customer acquisition</span></div>
+              <h3>Bose × BonBon</h3>
+              <p>A limited-edition Valentine's Day giveaway designed to turn campaign curiosity into participation and My Bose membership interest—while adapting playful creative to an established design system.</p>
+              <div class="tags"><span class="tag">Conversion journey</span><span class="tag">Design system</span><span class="tag">Campaign UX</span></div>
+              <span class="bose-landing-project-link">Read case study →</span>
+            </div>
+            <div class="bose-landing-project-image"><img src="../assets/bose/bose-bonbon-two.png" alt="Bose BonBon Valentine campaign" loading="lazy"></div>
+          </a>
+          <a class="bose-landing-project bose-landing-project--flip" href="bose/case-study-kidsuper.html" aria-label="Read Bose KidSuper case study">
+            <div class="bose-landing-project-copy">
+              <div class="bose-landing-project-number">02 <span>Product discovery</span></div>
+              <h3>Bose × KidSuper</h3>
+              <p>Bringing limited-edition headphones into familiar shopping flows through PLP and PDP design decisions, component-aware storytelling, and a clearer path from curiosity to product consideration.</p>
+              <div class="tags"><span class="tag">PLP / PDP</span><span class="tag">Commerce UX</span><span class="tag">Responsive design</span></div>
+              <span class="bose-landing-project-link">Read case study →</span>
+            </div>
+            <div class="bose-landing-project-image"><img src="../assets/bose/bose-kidsuper-three.png" alt="Bose KidSuper limited-edition headphone creative" loading="lazy"></div>
+          </a>
+        </div>
+      </div>
     </section>
-
-    <div class="cs-nav">
-      <a href="index.html#bose" class="cs-nav-link">← Back to portfolio</a>
-      <a href="index.html#work" class="cs-nav-link">See case studies →</a>
-    </div>
-
-  </div>
-
-  <!-- FOOTER -->
+    <div class="bose-landing-wrap bose-landing-bottom-nav"><a href="index.html#work">← Other case studies</a><a href="index.html#contact">Let's connect →</a></div>
+  </main>
   <footer class="panel panel-footer" id="contact">
-    <div class="panel-inner footer-inner">
-      <div class="footer-top">
-        <div class="footer-left">
-          <p class="eyebrow">Let's connect</p>
-          <h2 class="footer-heading">Open to remote &<br>hybrid roles in Atlanta.</h2>
-          <a href="mailto:hireme.soyeniyi@gmail.com" class="footer-email">hireme.soyeniyi@gmail.com</a>
-          <div class="footer-actions">
-            <a href="mailto:hireme.soyeniyi@gmail.com" class="btn-primary">Send an email</a>
-            <a href="assets/s-oyeniyi-ux-designer.pdf" class="btn-outline" download>Resume ↓</a>
-          </div>
-        </div>
-        <div class="footer-wordmark">Sammi<br>Oyeniyi</div>
-      </div>
-      <div class="footer-bottom">
-        <p>Designed & built by Sammi Oyeniyi · 2026</p>
-        <div class="footer-links">
-          <a href="https://github.com/SOyeniyi801" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.linkedin.com/in/samantha-o-6384705a/" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://sammithedev.substack.com" target="_blank" rel="noopener">Substack</a>
-        </div>
-      </div>
-    </div>
+    <div class="panel-inner footer-inner"><div class="footer-top"><div class="footer-left"><p class="eyebrow">Let's connect</p><h2 class="footer-heading">Open to remote &amp;<br>hybrid roles in Atlanta.</h2><a href="mailto:hireme.soyeniyi@gmail.com" class="footer-email">hireme.soyeniyi@gmail.com</a><div class="footer-actions"><a href="mailto:hireme.soyeniyi@gmail.com" class="btn-primary">Send an email</a><a href="assets/s-oyeniyi-ux-designer.pdf" class="btn-outline" download>Resume ↓</a></div></div><div class="footer-wordmark">Sammi<br>Oyeniyi</div></div><div class="footer-bottom"><p>Designed &amp; built by Sammi Oyeniyi · 2026</p><div class="footer-links"><a href="https://github.com/SOyeniyi801" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/samantha-o-6384705a/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://sammithedev.substack.com" target="_blank" rel="noopener noreferrer">Substack</a></div></div></div>
   </footer>
-
   <script>
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
-    hamburger.addEventListener('click', () => {
-      const isOpen = mobileMenu.classList.contains('is-open');
-      if (isOpen) { closeMenu(); } else { openMenu(); }
-    });
-    function openMenu() {
-      mobileMenu.classList.add('is-open');
-      hamburger.classList.add('is-active');
-      hamburger.setAttribute('aria-expanded', 'true');
-      document.body.style.overflow = 'hidden';
-    }
-    function closeMenu() {
-      mobileMenu.classList.remove('is-open');
-      hamburger.classList.remove('is-active');
-      hamburger.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
-    }
-    mobileMenu.addEventListener('click', (e) => { if (e.target === mobileMenu) closeMenu(); });
-     // Hide nav on scroll down, show on scroll up
-let lastScrollY = window.scrollY;
-let navHidden = false;
-const navEl = document.querySelector('.nav');
-
-function handleNavScroll() {
-  const currentScrollY = window.scrollY;
-
-  // Always show nav near the top of the page
-  if (currentScrollY < 80) {
-    navEl.classList.remove('nav--hidden');
-    navHidden = false;
-    lastScrollY = currentScrollY;
-    return;
-  }
-
-  const scrollingDown = currentScrollY > lastScrollY;
-
-  if (scrollingDown && !navHidden) {
-    navEl.classList.add('nav--hidden');
-    navHidden = true;
-  } else if (!scrollingDown && navHidden) {
-    navEl.classList.remove('nav--hidden');
-    navHidden = false;
-  }
-
-  lastScrollY = currentScrollY;
-}
-
-window.addEventListener('scroll', handleNavScroll, { passive: true });
-function openMenu() {
-  mobileMenu.classList.add('is-open');
-  hamburger.classList.add('is-active');
-  hamburger.setAttribute('aria-expanded', 'true');
-  document.body.style.overflow = 'hidden';
-  navEl.classList.remove('nav--hidden'); // keep nav visible while menu is open
-}
+    const navEl = document.querySelector('.nav');
+    function closeMenu(){mobileMenu.classList.remove('is-open');hamburger.classList.remove('is-active');hamburger.setAttribute('aria-expanded','false');mobileMenu.setAttribute('aria-hidden','true');document.body.style.overflow='';}
+    function openMenu(){mobileMenu.classList.add('is-open');hamburger.classList.add('is-active');hamburger.setAttribute('aria-expanded','true');mobileMenu.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}
+    hamburger.addEventListener('click',()=>mobileMenu.classList.contains('is-open')?closeMenu():openMenu());
+    mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
+    mobileMenu.addEventListener('click',e=>{if(e.target===mobileMenu)closeMenu()});
+    let lastScrollY=window.scrollY;
+    window.addEventListener('scroll',()=>{let y=window.scrollY;if(y<80||mobileMenu.classList.contains('is-open'))navEl.classList.remove('nav--hidden');else if(y>lastScrollY)navEl.classList.add('nav--hidden');else navEl.classList.remove('nav--hidden');lastScrollY=y},{passive:true});
   </script>
 </body>
 </html>

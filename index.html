@@ -1,556 +1,1049 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Sammi Oyeniyi — UX Designer</title>
+
   <link rel="icon" type="image/x-icon" href="assets/resume-favicon.png">
+
   <meta name="description" content="UX designer with a technical foundation. Atlanta, GA.">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
 
+
+
   <header class="nav">
+
     <a href="index.html" class="nav-logo">Sammi Oyeniyi | <span>UX Designer</span></a>
+
     <ul class="nav-links">
+
       <li><a href="index.html#work">Case Studies</a></li>
+
       <li><a href="index.html#builds">Builds</a></li>
+
       <li><a href="index.html#bose">Bose</a></li>
+
       <li><a href="index.html#thinking">Writing</a></li>
+
       <li><a href="index.html#beyond">Beyond</a></li>
+
       <li><a href="index.html#contact">Contact</a></li>
+
       <li><a href="assets/s-oyeniyi-ux-designer.pdf" class="nav-resume" download>Resume ↓</a></li>
+
     </ul>
+
     <!-- Mobile controls -->
+
     <div class="nav-mobile-controls">
+
       <a href="assets/s-oyeniyi-ux-designer.pdf" class="nav-resume nav-resume--mobile" download>Resume ↓</a>
+
       <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+
         <span></span>
+
         <span></span>
+
         <span></span>
+
       </button>
+
     </div>
+
   </header>
 
+
+
   <!-- Mobile menu overlay -->
+
   <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+
     <nav class="mobile-menu-inner">
+
       <a href="index.html#work"     class="mobile-link" onclick="closeMenu()">Work</a>
+
       <a href="index.html#builds"   class="mobile-link" onclick="closeMenu()">Builds</a>
+
       <a href="index.html#bose"     class="mobile-link" onclick="closeMenu()">Bose</a>
+
       <a href="index.html#thinking" class="mobile-link" onclick="closeMenu()">Writing</a>
+
       <a href="index.html#beyond"   class="mobile-link" onclick="closeMenu()">Beyond</a>
+
       <a href="index.html#contact"  class="mobile-link" onclick="closeMenu()">Contact</a>
+
       <a href="assets/s-oyeniyi-ux-designer.pdf" class="mobile-link mobile-link--resume" download>Resume ↓</a>
+
     </nav>
+
   </div>
 
+
+
   <!-- SCROLL STACK WRAPPER -->
+
   <div class="stack-wrapper">
 
+
+
     <!-- PANEL 1: HERO -->
+
     <section class="panel panel-hero" id="hero">
+
       <div class="hero-inner">
+
         <div class="hero-text">
+
           <div class="available-badge">
+
             <span class="badge-dot"></span>
+
             Open to remote, Atlanta & New York opportunities
+
           </div>
+
           <!-- HEADLINE: write your own here -->
+
           <h1 class="hero-heading">
+
             <!-- Line 1 -->
+
             <span class="hero-line">Good design</span>
+
             <!-- Line 2 — italic accent -->
+
             <span class="hero-line hero-line--accent"><em>should feel obvious</em></span>
+
           </h1>
+
           <p class="hero-sub">
+
             <!-- Your subheading: role, background, what makes you different -->
+
             I research, design, and build digital products that solve real problems based on user feedback.
+
           </p>
+
           <div class="hero-skills">
+
             <span>UX Design</span>
+
             <span>Feature Design</span>
+
             <span>HTML / CSS / JS</span>
+
             <span>Figma</span>
+
           </div>
+
           <div class="hero-actions">
+
             <a href="#work" class="btn-primary">See my work</a>
+
             <a href="assets/sam-oyeniyi-product-designer-resume.pdf" class="btn-outline" download>Download Resume ↓</a>
+
           </div>
+
         </div>
+
         <div class="hero-photo">
+
          <img src="assets/portfolio-header.png" alt="abstract line art of woman">
+
           <!-- <div class="hero-photo-placeholder">
+
             <span>Your photo<br>or illustration</span>
+
           </div> -->
+
         </div>
+
       </div>
+
     </section>
 
+
+
     <!-- PANEL 2: WORK -->
+
     <section class="panel panel-work" id="work">
+
       <div class="panel-inner">
+
         <div class="section-header">
+
           <p class="eyebrow">Selected work</p>
+
           <h2>Product thinking in the wild</h2>
+
           <p>A collection of concepts, redesigns, and side projects exploring how better product decisions create better user experiences.</p>
+
         </div>
+
+
 
         <div class="work-grid">
 
+
+
           <!-- ROW 1: text left, image right -->
+
           <a href="case-study-wttj.html" class="work-row">
+
             <div class="work-info">
+
               <div class="work-meta">
+
                 <span class="work-num">01</span>
+
                 <span class="work-noticed">★ Company noticed this</span>
+
               </div>
+
               <h3>Fixing the job tracker that forgets you</h3>
+
               <p>The "Move" feature on WTTJ loses crucial application context — users can't track rejections, ghosting, or withdrawn offers. I redesigned the dashboard to fix this.</p>
+
               <div class="tags">
+
                 <span class="tag">Feature design</span>
+
                 <span class="tag">UX research</span>
+
                 <span class="tag">Job tech</span>
+
               </div>
+
               <span class="work-cta">Read case study →</span>
+
             </div>
+
             <div class="work-image work-image--wttj">
+
               <img src="assets/wttj-hp.png" alt="WTTJ mockup">
+
             </div>
+
           </a>
+
+
 
           <!-- ROW 2: image left, text right -->
+
           <a href="case-study-instagram.html" class="work-row work-row--flip">
+
             <div class="work-image work-image--instagram">
+
               <img src="assets/ig-close-friends.png" alt="Instagram mockup">
+
             </div>
+
             <div class="work-info">
+
               <div class="work-meta">
+
                 <span class="work-num">02</span>
+
               </div>
+
               <h3>Close Friends, but for your actual life</h3>
+
               <p>Instagram's Close Friends assumes your inner circle is one group. For most people, it isn't. I designed a multi-list system that fits how people actually share.</p>
+
               <div class="tags">
+
                 <span class="tag">Feature design</span>
+
                 <span class="tag">Mobile UX</span>
+
                 <span class="tag">Social</span>
+
               </div>
+
               <span class="work-cta">Read case study →</span>
+
             </div>
+
           </a>
+
+
 
           <!-- ROW 3: text left, image right -->
+
           <a href="case-study-hinge.html" class="work-row">
+
             <div class="work-info">
+
               <div class="work-meta">
+
                 <span class="work-num">03</span>
+
               </div>
+
               <h3>More Than "Have Children"</h3>
+
               <p>Hinge's Family Planning section leaves too much open to interpretation. I redesigned the experience to create more clarity, better compatibility, and fewer awkward conversations.</p>
+
               <div class="tags">
+
                 <span class="tag">Feature design</span>
+
                 <span class="tag">UX research</span>
+
                 <span class="tag">Dating tech</span>
+
               </div>
+
               <span class="work-cta">Read case study →</span>
+
             </div>
+
             <div class="work-image work-image--hinge">
+
               <img src="assets/hinge-hp.png" alt="Hinge mockup">
+
             </div>
+
           </a>
 
+
+
         </div>
+
       </div>
+
     </section>
 
+
+
     <!-- PANEL: BUILDS / PROTOTYPES -->
+
     <!--
+
       To add next week's project:
+
       1. Duplicate the ".build-card" block below (not the ".build-card--empty" one).
+
       2. Point its <a href> at the new project's detail page (e.g. build-<name>.html).
+
       3. Swap the image, eyebrow, title, description, and tags.
+
       4. Copy build-imageprep.html as a starting template for the new detail page.
+
       The dashed "next build" card can stay as the last item, or be removed once
+
       you're not actively teasing an upcoming project.
-    -->
-    <section class="panel panel-builds" id="builds">
-      <div class="panel-inner">
-        <div class="section-header">
-          <p class="eyebrow">Prototypes</p>
-          <h2>Built, not just designed</h2>
-          <p>Side projects I designed and shipped myself — real, working products, not just mockups. Currently focused on progressive web apps.</p>
+
+    \-->
+
+     <!-- PANEL: BOSE — PROFESSIONAL UX WORK -->
+  <section class="panel panel-bose" id="bose">
+    <div class="panel-inner">
+      <div class="bose-layout">
+        <div class="bose-left">
+          <p class="eyebrow">Professional work · 2025–2026</p>
+          <h2 class="bose-heading">Designing for<br><em>Bose</em></h2>
+          <p class="bose-sub">Design decisions made with a team—and experiences that made it to production. At Bose, I worked across UX, engineering, and marketing to refine responsive shopping experiences, navigate enterprise design-system constraints, and support launches across six sites.</p>
+          <div class="bose-details">
+            <div class="bose-detail"><span class="bose-detail-label">Role</span><span class="bose-detail-value">UX / Web Designer</span></div>
+            <div class="bose-detail"><span class="bose-detail-label">Focus</span><span class="bose-detail-value">E-commerce UX · Product discovery · Campaign experiences</span></div>
+            <div class="bose-detail"><span class="bose-detail-label">Team</span><span class="bose-detail-value">UX · Engineering · Marketing</span></div>
+          </div>
+          <a href="bose.html" class="btn-primary">Explore Bose case studies →</a>
         </div>
+        <div class="bose-right">
+          <div class="bose-grid">
+            <div class="bose-thumb bose-thumb--tall"><img src="assets/bose/bose-hp.png" alt="Bose e-commerce experience" loading="lazy"></div>
+            <div class="bose-thumb-stack">
+              <div class="bose-thumb"><img src="assets/bose/bose-kidsuper-one.png" alt="Bose × KidSuper product collaboration" loading="lazy"></div>
+              <div class="bose-thumb"><img src="assets/bose/bose-hp-bonbon.png" alt="Bose × BonBon digital campaign" loading="lazy"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="panel panel-builds" id="builds">
+
+      <div class="panel-inner">
+
+        <div class="section-header">
+
+          <p class="eyebrow">Prototypes</p>
+
+          <h2>Built, not just designed</h2>
+
+          <p>Side projects I designed and shipped myself — real, working products, not just mockups. Currently focused on progressive web apps.</p>
+
+        </div>
+
+
 
         <div class="builds-grid">
 
+
+
           <!-- BUILD 1: ImagePrep -->
+
           <a href="build-imgsqueeze.html" class="build-card">
+
             <div class="build-card-image">
+
               <span class="build-status"><span class="build-status-dot"></span> Live</span>
+
               <img src="assets/imgsqueeze-hp.jpg" alt="ImgSqueeze app screenshot">
+
             </div>
+
             <div class="build-card-body">
+
               <p class="build-card-eyebrow">Progressive Web App</p>
+
               <h3>ImgSqueeze</h3>
+
               <p>A batch photo tool for photographers — compression, watermarking, renaming, and export, all in one lightweight PWA that installs straight to your phone.</p>
+
               <div class="tags">
+
                 <span class="tag">React</span>
+
                 <span class="tag">Canvas API</span>
+
                 <span class="tag">PWA</span>
+
               </div>
+
               <span class="work-cta">View project →</span>
+
             </div>
+
           </a>
+
+
 
           <!-- NEXT BUILD — placeholder slot, swap for the next project card -->
+
           <!-- <div class="build-card build-card--empty">
+
             <div class="build-card--empty-inner">
+
               <span>🛠️</span>
+
               <strong>Next build in progress</strong>
+
               <p>A new prototype is on the way — check back soon.</p>
+
             </div>
+
           </div> -->
 
+
+
         </div>
+
       </div>
+
     </section>
 
-    <!-- PANEL: BOSE -->
-    <section class="panel panel-bose" id="bose">
-      <div class="panel-inner">
-        <div class="bose-layout">
-          <div class="bose-left">
-            <p class="eyebrow">Professional work</p>
-            <h2 class="bose-heading">In production<br>at <em>Bose</em></h2>
-            <p class="bose-sub">Real pages, shipped at scale, for a global audio brand. As part of a cross-functional team I helped publish and maintain e-commerce and marketing content across six global sites — spanning product pages, campaign launches, and high-profile collaborations.</p>
-            <div class="bose-details">
-              <div class="bose-detail">
-                <span class="bose-detail-label">Role</span>
-                <span class="bose-detail-value">UX / Web Designer</span>
-              </div>
-              <div class="bose-detail">
-                <span class="bose-detail-label">Tools</span>
-                <span class="bose-detail-value">Contentstack · Adobe Experience Manager · Jira</span>
-              </div>
-              <div class="bose-detail">
-                <span class="bose-detail-label">Scope</span>
-                <span class="bose-detail-value">6 global marketing sites · US & Canada</span>
-              </div>
-            </div>
-            <a href="bose.html" class="btn-primary">View Bose work →</a>
-          </div>
-          <div class="bose-right">
-            <!-- Replace these with real screenshots -->
-            <div class="bose-grid">
-              <div class="bose-thumb bose-thumb--tall">
-                <img src="assets/bose/bose-hp.png" alt="Bose page">
-              </div>
-              <div class="bose-thumb-stack">
-                <div class="bose-thumb">
-                  <img src="assets/bose/bose-hp-small-one.png" alt="Bose page">
-                </div>
-                <div class="bose-thumb">
-                  <img src="assets/bose/bose-hp-bonbon.png" alt="Bose page">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- PANEL 3: DESIGN THINKING -->
 
-    <!-- PANEL 3: DESIGN THINKING -->
     <section class="panel panel-thinking" id="thinking">
+
       <div class="panel-inner">
+
         <div class="section-header section-header--row">
+
           <div>
+
             <p class="eyebrow">Design thinking</p>
+
             <h2>I write about UX in the wild</h2>
+
             <p>Thoughts on design, careers, product strategy, and the occasional existential crisis about interfaces.</p>
+
           </div>
+
           <a href="https://sammithedev.substack.com" target="_blank" rel="noopener" class="substack-link">All posts on Substack →</a>
+
         </div>
+
+
 
         <div class="thinking-list">
+
           <a href="https://sammithedev.substack.com/p/uber-doesnt-pay-driversits-ux-does" target="_blank" rel="noopener" class="thinking-row">
+
             <div class="thinking-row-left">
+
               <span class="thinking-num">01</span>
+
               <div>
+
                 <p class="thinking-label">UX critique</p>
+
                 <h3>Uber Doesn't Pay Drivers — Its UX Does</h3>
+
                 <p>How tip architecture and hidden totals keep drivers working for less than they think. Written from experience — I drove for Uber to pay the bills.</p>
+
               </div>
+
             </div>
+
             <span class="thinking-arrow">→</span>
+
           </a>
+
           <a href="https://sammithedev.substack.com/p/my-ai-assisted-portfolio-workflow" target="_blank" rel="noopener" class="thinking-row">
+
             <div class="thinking-row-left">
+
               <span class="thinking-num">02</span>
+
               <div>
+
                 <p class="thinking-label">Prototyping</p>
+
                 <h3>My AI-Assisted Portfolio Workflow</h3>
+
                 <p>How I use AI to help me build faster, as opposed to a crutch.</p>
+
               </div>
+
             </div>
+
             <span class="thinking-arrow">→</span>
+
           </a>
+
           <a href="https://sammithedev.substack.com/p/finding-my-way-from-support-engineering" target="_blank" rel="noopener" class="thinking-row">
+
             <div class="thinking-row-left">
+
               <span class="thinking-num">03</span>
+
               <div>
+
                 <p class="thinking-label">Career</p>
+
                 <h3>Finding My Way: From Support Engineering to UX Design and Beyond</h3>
+
                 <p>My journey into UX design may have been unexpected, but it was destined.</p>
+
               </div>
+
             </div>
+
             <span class="thinking-arrow">→</span>
+
           </a>
+
         </div>
+
       </div>
+
     </section>
+
+
 
     <!-- PANEL: TECH STACK + RESUME -->
+
     <section class="panel panel-stack" id="stack">
+
       <div class="panel-inner">
+
         <div class="stack-section-header">
+
           <div>
+
             <p class="eyebrow">Tools & experience</p>
+
             <h2>My Toolkit</h2>
+
           </div>
+
           <a href="assets/sam-oyeniyi-product-designer-resume.pdf" class="btn-primary" download>Download full resume ↓</a>
+
         </div>
+
+
 
         <div class="tech-grid">
+
           <div class="tech-item">
+
             <div class="tech-icon">
+
               <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 12a4 4 0 1 0 8 0 4 4 0 0 0-8 0z" fill="#D14836"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke="#D14836" stroke-width="1.5" fill="none"/></svg>
+
             </div>
+
             <span class="tech-name">Figma</span>
+
             <span class="tech-desc">Design & prototyping</span>
+
           </div>
+
           <div class="tech-item">
+
             <div class="tech-icon tech-icon--code">
-              <span>&lt;/&gt;</span>
+
+              <span></></span>
+
             </div>
+
             <span class="tech-name">HTML / CSS / JS</span>
+
             <span class="tech-desc">Frontend development</span>
+
           </div>
+
           <div class="tech-item">
+
             <div class="tech-icon tech-icon--jira">
+
               <span>J</span>
+
             </div>
+
             <span class="tech-name">Jira</span>
+
             <span class="tech-desc">Project management</span>
+
           </div>
+
           <div class="tech-item">
+
             <div class="tech-icon tech-icon--adobe">
+
               <span>Ai</span>
+
             </div>
+
             <span class="tech-name">Adobe Suite</span>
+
             <span class="tech-desc">Creative tools</span>
+
           </div>
+
         </div>
+
+
 
         <div class="resume-strip">
+
           <div class="resume-roles">
+
             <div class="resume-role">
+
               <div class="resume-role-left">
+
                 <span class="resume-role-title">UX/Web Designer</span>
+
                 <span class="resume-role-co">Bose · Contract</span>
+
                 <p class="resume-text">Supported the migration of six global websites to a new content platform while maintaining consistency, quality, and accessibility across regions.</p>
+
               </div>
+
               <span class="resume-role-date">Nov 2025 – June 2026</span>
+
             </div>
+
             <div class="resume-role">
+
               <div class="resume-role-left">
+
                 <span class="resume-role-title">Freelance UX Designer & Developer</span>
+
                 <span class="resume-role-co">Self-employed</span>
+
                 <p class="resume-text">Helped small businesses and nonprofits establish their online presence through custom websites focused on usability, accessibility, and conversion.</p>
+
               </div>
+
               <span class="resume-role-date">Jun 2024 – Present</span>
+
             </div>
+
             <div class="resume-role">
+
               <div class="resume-role-left">
+
                 <span class="resume-role-title">Applications Engineer</span>
+
                 <span class="resume-role-co">Auxo Solutions</span>
+
                 <p class="resume-text">Built and maintained client applications for healthcare and financial organizations, collaborating across teams to deliver reliable software solutions.</p>
+
               </div>
+
               <span class="resume-role-date">Aug 2023 – Feb 2024</span>
+
             </div>
+
             <div class="resume-role">
+
               <div class="resume-role-left">
+
                 <span class="resume-role-title">Software Support Engineer</span>
+
                 <span class="resume-role-co">Code Climate</span>
+
                 <p class="resume-text">As the first support engineer, built documentation, established support processes, and created a foundation for scaling customer support.</p>
+
               </div>
+
               <span class="resume-role-date">Jan 2022 – Aug 2023</span>
+
             </div>
+
             <div class="resume-role">
+
               <div class="resume-role-left">
+
                 <span class="resume-role-title">Production Support Engineer</span>
+
                 <span class="resume-role-co">Unqork</span>
+
                 <p class="resume-text">Helped shape the support organization by improving documentation, onboarding new team members, and creating repeatable troubleshooting processes.</p>
+
               </div>
+
               <span class="resume-role-date">Dec 2019 – Jan 2022</span>
+
             </div>
+
           </div>
+
         </div>
 
+
+
       </div>
+
     </section>
+
+
 
     <!-- PANEL 4: BEYOND -->
+
     <section class="panel panel-beyond" id="beyond">
+
       <div class="panel-inner">
+
         <div class="section-header">
+
           <p class="eyebrow">Beyond the portfolio</p>
+
           <h2 class="beyond-heading">The person<br><em>behind the work</em></h2>
+
         </div>
+
         <div class="beyond-layout">
+
           <div class="beyond-photo">
+
            <img src="assets/portfolio-beyond.png" alt="Sammi">
+
           </div>
+
           <div class="beyond-facts">
+
             <div class="fact-row">
+
               <span class="fact-label">Based in</span>
+
               <span class="fact-value">Atlanta, GA — originally from Brooklyn, NY</span>
+
             </div>
+
             <div class="fact-row">
+
               <span class="fact-label">Currently learning</span>
+
               <span class="fact-value">Photography, you can check out my work <a href="https://www.sammishotthat.com/" target="_blank" style="text-decoration: underline;color: #B03A2B;" rel="noopener noreferrer">here</a> </span>
+
             </div>
+
             <div class="fact-row">
+
               <span class="fact-label">Currently reading</span>
+
               <span class="fact-value">The Design of Everyday Things — Don Norman</span>
+
             </div>
+
             <div class="fact-row">
+
               <span class="fact-label">Languages</span>
+
               <span class="fact-value">English, Haitian Creole</span>
+
             </div>
+
             <div class="fact-row">
+
               <span class="fact-label">Fun fact</span>
+
               <span class="fact-value">This website was designed and built by me, with the help of AI</span>
+
             </div>
+
             <div class="fact-row">
+
               <span class="fact-label">Also me</span>
+
               <span class="fact-value">I'm a creative at heart, so I'm always looking for new ways to express that.</span>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
 
+
+
     <!-- PANEL 5: FOOTER / CONTACT -->
+
     <footer class="panel panel-footer" id="contact">
+
       <div class="panel-inner footer-inner">
+
         <div class="footer-top">
+
           <div class="footer-left">
+
             <p class="eyebrow">Let's connect</p>
+
             <h2 class="footer-heading">Open to remote &<br>hybrid roles in Atlanta.</h2>
+
             <a href="mailto:hireme.soyeniyi@gmail.com" class="footer-email">hireme.soyeniyi@gmail.com</a>
+
             <div class="footer-actions">
+
               <a href="mailto:hireme.soyeniyi@gmail.com" class="btn-primary">Send an email</a>
+
               <a href="assets/s-oyeniyi-ux-designer.pdf" class="btn-outline" download>Resume ↓</a>
+
             </div>
+
           </div>
+
           <div class="footer-wordmark">Sammi<br>Oyeniyi</div>
+
         </div>
+
         <div class="footer-bottom">
+
           <p>Designed & built by Sammi Oyeniyi · 2026</p>
+
           <div class="footer-links">
+
             <a href="https://github.com/SOyeniyi801" target="_blank" rel="noopener">GitHub</a>
+
             <a href="https://www.linkedin.com/in/samantha-o-6384705a/" target="_blank" rel="noopener">LinkedIn</a>
+
             <a href="https://sammithedev.substack.com" target="_blank" rel="noopener">Substack</a>
+
           </div>
+
         </div>
+
       </div>
+
     </footer>
+
+
 
   </div><!-- end .stack-wrapper -->
 
+
+
   <script>
+
     // Stacking scroll — hero scales down as next panel covers it
+
     const hero = document.querySelector('.panel-hero');
+
     function onScroll() {
+
       if (!hero) return;
+
       const rect = hero.getBoundingClientRect();
+
       const progress = Math.min(Math.max(-rect.top / (rect.height * 0.6), 0), 1);
+
       hero.style.transform = `scale(${1 - progress * 0.035})`;
+
       hero.style.transformOrigin = 'top center';
+
     }
+
     window.addEventListener('scroll', onScroll, { passive: true });
+
     onScroll();
 
+
+
     // Hamburger menu
+
     const hamburger = document.getElementById('hamburger');
+
     const mobileMenu = document.getElementById('mobileMenu');
 
+
+
     hamburger.addEventListener('click', () => {
+
       const isOpen = mobileMenu.classList.contains('is-open');
+
       if (isOpen) { closeMenu(); } else { openMenu(); }
+
     });
+
+
 
     function openMenu() {
+
       mobileMenu.classList.add('is-open');
+
       hamburger.classList.add('is-active');
+
       hamburger.setAttribute('aria-expanded', 'true');
+
       mobileMenu.setAttribute('aria-hidden', 'false');
+
       document.body.style.overflow = 'hidden';
+
     }
+
+
 
     function closeMenu() {
+
       mobileMenu.classList.remove('is-open');
+
       hamburger.classList.remove('is-active');
+
       hamburger.setAttribute('aria-expanded', 'false');
+
       mobileMenu.setAttribute('aria-hidden', 'true');
+
       document.body.style.overflow = '';
+
     }
 
+
+
     // Close on outside click
+
     mobileMenu.addEventListener('click', (e) => {
+
       if (e.target === mobileMenu) closeMenu();
+
     });
+
     // Hide nav on scroll down, show on scroll up
+
 let lastScrollY = window.scrollY;
+
 let navHidden = false;
+
 const navEl = document.querySelector('.nav');
 
+
+
 function handleNavScroll() {
+
   const currentScrollY = window.scrollY;
 
+
+
   // Always show nav near the top of the page
+
   if (currentScrollY < 80) {
+
     navEl.classList.remove('nav--hidden');
+
     navHidden = false;
+
     lastScrollY = currentScrollY;
+
     return;
+
   }
+
+
 
   const scrollingDown = currentScrollY > lastScrollY;
 
+
+
   if (scrollingDown && !navHidden) {
+
     navEl.classList.add('nav--hidden');
+
     navHidden = true;
+
   } else if (!scrollingDown && navHidden) {
+
     navEl.classList.remove('nav--hidden');
+
     navHidden = false;
+
   }
 
+
+
   lastScrollY = currentScrollY;
+
 }
+
+
 
 window.addEventListener('scroll', handleNavScroll, { passive: true });
+
 function openMenu() {
+
   mobileMenu.classList.add('is-open');
+
   hamburger.classList.add('is-active');
+
   hamburger.setAttribute('aria-expanded', 'true');
+
   document.body.style.overflow = 'hidden';
+
   navEl.classList.remove('nav--hidden'); // keep nav visible while menu is open
+
 }
+
   </script>
 
+
+
 </body>
+
 </html>

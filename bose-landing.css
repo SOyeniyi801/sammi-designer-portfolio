@@ -1,0 +1,351 @@
+/* Bose landing page: additive to existing styles.css. No global styles overridden. */
+.bose-landing-page {
+  background: var(--offwhite);
+}
+.bose-skip {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 2000;
+  background: #fff;
+  padding: 12px;
+}
+.bose-skip:focus {
+  left: 18px;
+  top: 80px;
+}
+.bose-landing-wrap {
+  width: min(100% - 96px, 1044px);
+  margin-inline: auto;
+}
+.bose-landing-hero {
+  background: var(--offwhite-2);
+  border-bottom: 1px solid var(--border);
+  padding: 66px 0 74px;
+}
+.bose-landing-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: 58px;
+  align-items: center;
+}
+.bose-landing-hero-copy .cs-back {
+  margin-bottom: 26px;
+}
+.bose-landing-hero h1 {
+  font-size: clamp(41px, 5vw, 66px);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  max-width: 640px;
+  margin: 10px 0 22px;
+}
+.bose-landing-hero h1 em {
+  color: var(--red);
+  font-style: italic;
+}
+.bose-landing-lede {
+  font-size: 15px;
+  line-height: 1.85;
+  max-width: 590px;
+}
+.bose-landing-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 22px;
+  border-top: 1px solid var(--border-med);
+  margin-top: 31px;
+  padding-top: 24px;
+}
+.bose-landing-meta div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.bose-landing-meta span {
+  font-size: 10px;
+  color: var(--red);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.bose-landing-meta strong {
+  font-size: 12px;
+  color: var(--charcoal);
+  font-weight: 500;
+  line-height: 1.5;
+}
+.bose-landing-hero-media {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 180px 180px;
+  gap: 12px;
+  min-width: 0;
+}
+.bose-landing-hero-media figure {
+  min-width: 0;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+.bose-landing-hero-media img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.bose-landing-mosaic-tall {
+  grid-row: 1/3;
+}
+.bose-landing-mosaic-tall img {
+  object-position: top center;
+}
+.bose-landing-section {
+  padding: 84px 0 90px;
+}
+.bose-landing-context {
+  background: #fff;
+}
+.bose-landing-context-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 64px;
+  align-items: start;
+}
+.bose-landing-context h2,
+.bose-landing-section-header h2 {
+  font-size: clamp(32px, 4vw, 47px);
+  line-height: 1.17;
+  max-width: 560px;
+}
+.bose-landing-prose p {
+  font-size: 15px;
+  line-height: 1.85;
+  margin-bottom: 16px;
+}
+.bose-landing-capabilities {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 44px;
+}
+.bose-landing-capabilities article {
+  border: 1px solid var(--border);
+  background: var(--offwhite);
+  border-radius: var(--r-md);
+  padding: 22px;
+  min-width: 0;
+}
+.bose-landing-capabilities article span {
+  font-size: 10px;
+  color: var(--red);
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+.bose-landing-capabilities h3 {
+  font-size: 20px;
+  line-height: 1.25;
+  margin: 12px 0 10px;
+}
+.bose-landing-capabilities p {
+  font-size: 13px;
+  line-height: 1.7;
+}
+.bose-landing-projects {
+  background: var(--offwhite);
+}
+.bose-landing-section-header {
+  margin-bottom: 42px;
+}
+.bose-landing-section-header h2 {
+  margin-bottom: 12px;
+}
+.bose-landing-section-header > p:last-child {
+  max-width: 650px;
+  font-size: 15px;
+}
+.bose-landing-project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 375px;
+  border-top: 1px solid var(--border);
+  color: inherit;
+  transition: background 0.2s;
+}
+.bose-landing-project:last-child {
+  border-bottom: 1px solid var(--border);
+}
+.bose-landing-project:hover,
+.bose-landing-project:focus-visible {
+  background: #fff;
+}
+.bose-landing-project-copy {
+  padding: 52px 46px 48px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.bose-landing-project-number {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  margin-bottom: 18px;
+}
+.bose-landing-project-number span {
+  font-size: 10px;
+  letter-spacing: 0;
+  color: var(--red-dark);
+  background: var(--red-light);
+  border-radius: 100px;
+  padding: 4px 11px;
+}
+.bose-landing-project h3 {
+  font-size: clamp(27px, 3vw, 37px);
+  line-height: 1.18;
+  margin-bottom: 14px;
+}
+.bose-landing-project-copy > p {
+  font-size: 14px;
+  line-height: 1.78;
+  max-width: 440px;
+}
+.bose-landing-project-copy .tags {
+  margin: 19px 0 16px;
+}
+.bose-landing-project-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--red);
+  margin-top: 5px;
+}
+.bose-landing-project-image {
+  border-left: 1px solid var(--border);
+  background: var(--offwhite-2);
+  min-width: 0;
+  min-height: 320px;
+  overflow: hidden;
+}
+.bose-landing-project-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.35s;
+}
+.bose-landing-project:hover img {
+  transform: scale(1.025);
+}
+.bose-landing-project--flip .bose-landing-project-image {
+  grid-column: 1;
+  grid-row: 1;
+  border-left: 0;
+  border-right: 1px solid var(--border);
+}
+.bose-landing-project--flip .bose-landing-project-copy {
+  grid-column: 2;
+  grid-row: 1;
+  padding: 52px 0 48px 46px;
+}
+.bose-landing-bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--border);
+  padding-top: 27px;
+  padding-bottom: 72px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.bose-landing-bottom-nav a {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--red);
+}
+.bose-landing-page .panel-footer {
+  margin-top: 0;
+  border-radius: var(--r-xl) var(--r-xl) 0 0;
+}
+.bose-landing-project-copy {
+    padding: 48px;
+    box-sizing: border-box;
+  }
+@media (max-width: 920px) {
+  .bose-landing-wrap {
+    width: calc(100% - 56px);
+  }
+  .bose-landing-hero-grid {
+    gap: 28px;
+  }
+  .bose-landing-capabilities {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .bose-landing-hero-media {
+    grid-template-rows: 145px 145px;
+  }
+}
+@media (max-width: 760px) {
+  .bose-landing-wrap {
+    width: calc(100% - 40px);
+  }
+  .bose-landing-hero {
+    padding: 48px 0 55px;
+  }
+  .bose-landing-hero-grid,
+  .bose-landing-context-grid {
+    grid-template-columns: 1fr;
+  }
+  .bose-landing-hero-media {
+    grid-template-rows: 155px 155px;
+  }
+  .bose-landing-section {
+    padding: 62px 0;
+  }
+  .bose-landing-context-grid {
+    gap: 18px;
+  }
+  .bose-landing-project {
+    grid-template-columns: 1fr;
+  }
+  .bose-landing-project-copy {
+    padding: 28px 24px;
+  }
+  .bose-landing-project-image,
+  .bose-landing-project--flip .bose-landing-project-image {
+    grid-column: 1;
+    grid-row: 1;
+    min-height: 250px;
+    border: 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .bose-landing-project-copy,
+  .bose-landing-project--flip .bose-landing-project-copy {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 32px 12px 37px;
+  }
+  .bose-landing-meta {
+    margin-top: 24px;
+  }
+}
+@media (max-width: 520px) {
+  .bose-landing-hero h1 {
+    font-size: 42px;
+  }
+  .bose-landing-capabilities {
+    grid-template-columns: 1fr;
+  }
+  .bose-landing-hero-media {
+    grid-template-rows: 130px 130px;
+  }
+  .bose-landing-meta {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .bose-landing-context h2 {
+    font-size: 34px;
+  }
+}
