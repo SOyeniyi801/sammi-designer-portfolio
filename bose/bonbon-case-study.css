@@ -1,0 +1,476 @@
+/* Bose × BonBon case study — additive stylesheet; load after styles.css */
+.bonbon-heading .panel-inner {
+  padding-bottom: 64px;
+}
+.bonbon-cover {
+  background: #f2d7de;
+  max-height: 620px;
+  overflow: hidden;
+}
+.bonbon-cover img {
+  display: block;
+  width: 100%;
+  max-height: 620px;
+  object-fit: contain;
+  margin: auto;
+}
+.bonbon-body {
+  max-width: 860px;
+}
+.bonbon-body .cs-section strong {
+  color: var(--charcoal);
+  font-weight: 600;
+}
+.bonbon-anatomy {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(230px, 1fr);
+  gap: 24px;
+  margin: 30px 0 12px;
+  align-items: start;
+}
+.bonbon-anatomy-visual {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--r-lg);
+  background: #f4d8df;
+  border: 1px solid var(--border);
+}
+.bonbon-anatomy-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.bonbon-safe-zone {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 34%;
+  border: 2px dashed rgba(209, 72, 54, 0.85);
+  background: rgba(209, 72, 54, 0.1);
+  display: flex;
+  align-items: flex-end;
+  padding: 12px;
+}
+.bonbon-safe-zone span {
+  background: var(--charcoal);
+  color: #fff;
+  font-size: 11px;
+  line-height: 1.4;
+  padding: 6px 9px;
+  border-radius: 5px;
+}
+.bonbon-anatomy-notes {
+  display: grid;
+  gap: 16px;
+}
+.bonbon-anatomy-notes > div {
+  display: grid;
+  grid-template-columns: 29px 1fr;
+  gap: 8px;
+  align-items: start;
+}
+.bonbon-anatomy-notes > div > span {
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--red);
+  padding-top: 3px;
+}
+.bonbon-body .bonbon-anatomy-notes p {
+  font-size: 13px;
+  line-height: 1.65;
+  margin: 0;
+}
+.bonbon-body .bonbon-aside {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.65;
+  margin-top: 12px;
+}
+.bonbon-process {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 28px;
+}
+.bonbon-process > div {
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 21px 17px;
+  background: #fff;
+}
+.bonbon-process span {
+  font-size: 11px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+.bonbon-process h3 {
+  font-size: 19px;
+  margin: 10px 0;
+}
+.bonbon-body .bonbon-process p {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+}
+.bonbon-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 28px 0;
+}
+.bonbon-gallery figure {
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  background: #f5e5e8;
+  min-width: 0;
+}
+.bonbon-gallery .bonbon-gallery-wide {
+  grid-column: 1/-1;
+}
+.bonbon-gallery img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+}
+.bonbon-gallery-wide img {
+  height: auto;
+  max-height: 480px;
+}
+.bonbon-gallery figcaption {
+  font-size: 12px;
+  color: var(--mid);
+  background: #fff;
+  border-top: 1px solid var(--border);
+  padding: 12px 16px;
+}
+.bonbon-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 27px 0 12px;
+}
+.bonbon-metric {
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: var(--r-md);
+  padding: 23px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.bonbon-metric strong {
+  font-family: var(--serif);
+  font-weight: 400 !important;
+  font-size: clamp(30px, 4vw, 45px);
+  line-height: 1.1;
+  color: var(--red) !important;
+}
+.bonbon-metric span {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--mid);
+}
+.bonbon-body .bonbon-data-note {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-top: 12px;
+}
+
+/* BONBON COLOR TREATMENT EXPLORATIONS */
+
+.bonbon-color-explorations {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 40px 0;
+  }
+  
+  .bonbon-color-explorations > h3 {
+    font-size: 24px;
+    color: var(--charcoal);
+  }
+  
+  .bonbon-color-explorations > p {
+    margin-bottom: 8px;
+  }
+  
+  .bonbon-color-explorations .bonbon-imagery-block {
+    width: 100%;
+  }
+  
+  @media (max-width: 540px) {
+    .bonbon-color-explorations {
+      gap: 20px;
+      margin: 32px 0;
+    }
+  
+    .bonbon-color-explorations > h3 {
+      font-size: 21px;
+    }
+  }
+  
+@media (max-width: 768px) {
+  .bonbon-anatomy {
+    grid-template-columns: 1fr;
+  }
+  .bonbon-process {
+    grid-template-columns: 1fr;
+  }
+  .bonbon-cover img {
+    max-height: none;
+  }
+  .bonbon-gallery img {
+    height: 210px;
+  }
+  .bonbon-gallery-wide img {
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  .bonbon-gallery {
+    grid-template-columns: 1fr;
+  }
+  .bonbon-gallery .bonbon-gallery-wide {
+    grid-column: auto;
+  }
+  .bonbon-metrics {
+    gap: 10px;
+  }
+  .bonbon-metric {
+    padding: 18px 14px;
+  }
+  .bonbon-metric strong {
+    font-size: 32px;
+  }
+}
+
+/* BonBon acquisition case study additions */
+.bonbon-live-link,
+.bonbon-inline-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  background: var(--red);
+  padding: 12px 23px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 26px;
+  transition: background 0.2s;
+}
+.bonbon-live-link:hover,
+.bonbon-inline-link:hover {
+  background: var(--red-dark);
+}
+.bonbon-inline-link {
+  margin-top: 22px;
+}
+.bonbon-journey {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin: 28px 0;
+}
+.bonbon-journey > div {
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: var(--r-md);
+  padding: 18px 14px;
+  min-width: 0;
+}
+.bonbon-journey span {
+  font-size: 10px;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+  color: var(--red);
+  display: block;
+  margin-bottom: 9px;
+}
+.bonbon-journey strong {
+  font-size: 14px;
+  display: block;
+  line-height: 1.35;
+  margin-bottom: 9px;
+}
+.bonbon-body .bonbon-journey p {
+  font-size: 12px;
+  line-height: 1.55;
+  margin: 0;
+}
+.bonbon-swatches {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+  margin: 27px 0 12px;
+}
+.bonbon-swatches > div {
+  min-width: 0;
+}
+.bonbon-swatches i {
+  display: block;
+  height: 100px;
+  background: var(--swatch);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  margin-bottom: 12px;
+}
+.bonbon-swatches strong {
+  display: block;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.bonbon-swatches span {
+  display: block;
+  font-size: 11px;
+  line-height: 1.45;
+  color: var(--mid);
+  margin-top: 5px;
+}
+.bonbon-imagery-stack {
+  display: grid;
+  gap: 28px;
+  margin: 28px 0;
+}
+.bonbon-imagery-block {
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  background: #fff;
+  min-width: 0;
+}
+.bonbon-imagery-head {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 15px;
+  padding: 22px;
+  border-bottom: 1px solid var(--border);
+  background: var(--offwhite-2);
+}
+.bonbon-imagery-label {
+  background: var(--red-light);
+  color: var(--red-dark);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+.bonbon-imagery-head h3 {
+  font-size: 23px;
+  margin-bottom: 7px;
+}
+.bonbon-body .bonbon-imagery-head p {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+}
+.bonbon-imagery-frame {
+  padding: 22px;
+}
+.bonbon-imagery-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--r-sm);
+}
+.bonbon-landing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  padding: 20px;
+}
+.bonbon-landing-card {
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  min-width: 0;
+  background: var(--offwhite);
+}
+.bonbon-landing-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.bonbon-landing-card figcaption {
+  border-top: 1px solid var(--border);
+  padding: 15px;
+}
+.bonbon-landing-card figcaption strong {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 7px;
+  line-height: 1.5;
+}
+.bonbon-body .bonbon-landing-card figcaption p {
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 0;
+}
+.bonbon-creative-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 24px;
+}
+.bonbon-creative-gallery figure {
+  overflow: hidden;
+  border-radius: var(--r-md);
+  border: 1px solid var(--border);
+  background: #fff;
+}
+.bonbon-creative-gallery img {
+  display: block;
+  width: 100%;
+  height: 210px;
+  object-fit: contain;
+  background: #f5e5e8;
+}
+.bonbon-creative-gallery figcaption {
+  border-top: 1px solid var(--border);
+  padding: 10px 14px;
+  color: var(--mid);
+  font-size: 12px;
+}
+@media (max-width: 860px) {
+  .bonbon-journey {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .bonbon-landing-grid {
+    grid-template-columns: 1fr;
+  }
+  .bonbon-swatches {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .bonbon-swatches i {
+    height: 84px;
+  }
+}
+@media (max-width: 540px) {
+  .bonbon-swatches {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .bonbon-journey {
+    grid-template-columns: 1fr;
+  }
+  .bonbon-creative-gallery {
+    grid-template-columns: 1fr;
+  }
+  .bonbon-imagery-head {
+    grid-template-columns: 1fr;
+  }
+  .bonbon-imagery-frame {
+    padding: 12px;
+  }
+  .bonbon-landing-grid {
+    padding: 12px;
+  }
+}
