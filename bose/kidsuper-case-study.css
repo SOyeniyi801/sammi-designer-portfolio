@@ -1,0 +1,349 @@
+/* Bose × KidSuper — additive CSS loaded after portfolio styles.css */
+.kidsuper-heading .panel-inner {
+  padding-bottom: 60px;
+}
+.kidsuper-body {
+  max-width: 860px;
+}
+.kidsuper-body .cs-section strong {
+  color: var(--charcoal);
+  font-weight: 600;
+}
+.kidsuper-focus,
+.kidsuper-process,
+.kidsuper-constraint-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 26px 0;
+}
+.kidsuper-focus article,
+.kidsuper-process > div,
+.kidsuper-constraint-grid > div {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 23px;
+  min-width: 0;
+}
+.kidsuper-focus span,
+.kidsuper-process span {
+  color: var(--red);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.kidsuper-focus h3,
+.kidsuper-process h3 {
+  font-size: 21px;
+  margin: 10px 0;
+}
+.kidsuper-body .kidsuper-focus p,
+.kidsuper-body .kidsuper-process p,
+.kidsuper-body .kidsuper-constraint-grid p {
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 8px 0 0;
+}
+.kidsuper-process {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.kidsuper-constraint-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.kidsuper-constraint-grid strong {
+  font-size: 14px;
+}
+.kidsuper-flow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 9px;
+  margin: 27px 0 12px;
+}
+.kidsuper-flow div {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 16px 12px;
+  min-width: 0;
+}
+.kidsuper-flow span {
+  display: block;
+  color: var(--red);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+.kidsuper-flow strong {
+  display: block;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.kidsuper-flow small {
+  display: block;
+  color: var(--mid);
+  font-size: 11px;
+  line-height: 1.5;
+}
+.kidsuper-body .kidsuper-aside {
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--muted);
+  margin: 14px 0 20px;
+}
+.kidsuper-artifact-notes {
+  border: 1px dashed var(--border-med);
+  border-radius: var(--r-md);
+  padding: 19px 22px;
+  margin: 25px 0;
+  background: var(--offwhite-2);
+}
+.kidsuper-artifact-notes strong {
+  font-size: 13px;
+}
+.kidsuper-body .kidsuper-artifact-notes p {
+  font-size: 12px;
+  margin: 4px 0 0;
+}
+.kidsuper-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 27px 0;
+}
+.kidsuper-gallery figure {
+  background: #f0eafa;
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  min-width: 0;
+}
+.kidsuper-gallery-wide {
+  grid-column: 1/-1;
+}
+.kidsuper-gallery img {
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+  display: block;
+}
+.kidsuper-gallery-wide img {
+  height: auto;
+  max-height: 480px;
+}
+.kidsuper-gallery figcaption {
+  font-size: 12px;
+  color: var(--mid);
+  background: #fff;
+  border-top: 1px solid var(--border);
+  padding: 12px 15px;
+}
+.kidsuper-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 26px 0 15px;
+}
+.kidsuper-metrics > div {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 23px 20px;
+}
+.kidsuper-metrics strong {
+  font-family: var(--serif);
+  font-size: clamp(29px, 4vw, 43px);
+  font-weight: 400 !important;
+  line-height: 1.1;
+  color: var(--red) !important;
+  display: block;
+  margin-bottom: 7px;
+}
+.kidsuper-metrics span {
+  font-size: 12px;
+  color: var(--mid);
+  line-height: 1.5;
+  display: block;
+}
+@media (max-width: 860px) {
+  .kidsuper-process,
+  .kidsuper-constraint-grid {
+    grid-template-columns: 1fr;
+  }
+  .kidsuper-flow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 540px) {
+  .kidsuper-focus,
+  .kidsuper-metrics,
+  .kidsuper-gallery {
+    grid-template-columns: 1fr;
+  }
+  .kidsuper-gallery-wide {
+    grid-column: auto;
+  }
+  .kidsuper-flow {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* KidSuper layout refinements — matching the BonBon case study */
+.kidsuper-heading .panel-inner {
+  padding-bottom: 56px;
+}
+.kidsuper-body {
+  padding-top: 66px;
+  padding-bottom: 88px;
+}
+.kidsuper-body .cs-section {
+  margin-bottom: 58px;
+}
+.kidsuper-body .cs-section h2 {
+  margin-bottom: 18px;
+}
+.kidsuper-body .cs-section > p {
+  margin-bottom: 16px;
+}
+.kidsuper-live-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 26px;
+  padding: 12px 23px;
+  border-radius: 999px;
+  background: var(--red);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.kidsuper-live-link:hover,
+.kidsuper-live-link:focus-visible {
+  background: var(--red-dark);
+}
+.kidsuper-text-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--red);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.kidsuper-text-link:hover {
+  color: var(--red-dark);
+}
+.kidsuper-body .kidsuper-focus,
+.kidsuper-body .kidsuper-process,
+.kidsuper-body .kidsuper-constraint-grid {
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+.kidsuper-body .kidsuper-gallery {
+  margin-top: 26px;
+  margin-bottom: 20px;
+}
+@media (max-width: 860px) {
+  .kidsuper-body {
+    padding-top: 50px;
+    padding-bottom: 72px;
+  }
+  .kidsuper-body .cs-section {
+    margin-bottom: 48px;
+  }
+}
+@media (max-width: 540px) {
+  .kidsuper-heading .panel-inner {
+    padding-bottom: 44px;
+  }
+  .kidsuper-live-link {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* PLP editorial card anatomy — copy left, diagram right */
+.kidsuper-anatomy-section {
+  margin-top: 8px;
+}
+.kidsuper-anatomy-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr);
+  gap: 26px;
+  align-items: start;
+  margin: 30px 0 24px;
+}
+.kidsuper-anatomy-layout img {
+    padding: 2em;
+}
+.kidsuper-anatomy-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  min-width: 0;
+}
+.kidsuper-anatomy-point {
+  display: grid;
+  grid-template-columns: 29px minmax(0, 1fr);
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+.kidsuper-anatomy-point:first-child {
+  padding-top: 0;
+}
+.kidsuper-anatomy-num {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--red);
+  padding-top: 5px;
+}
+.kidsuper-anatomy-point h3 {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+.kidsuper-body .kidsuper-anatomy-point p {
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 0;
+}
+.kidsuper-anatomy-figure {
+  margin: 0;
+  min-width: 0;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+}
+.kidsuper-anatomy-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #fff;
+}
+.kidsuper-anatomy-figure figcaption {
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--mid);
+  padding: 14px 16px;
+  border-top: 1px solid var(--border);
+}
+@media (max-width: 760px) {
+  .kidsuper-anatomy-layout {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .kidsuper-anatomy-figure {
+    max-width: 680px;
+  }
+}

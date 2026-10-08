@@ -1,0 +1,694 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <title>
+      Bose × KidSuper — Product Discovery &amp; Commerce UX | Sammi Oyeniyi
+    </title>
+
+    <meta
+      content="Bose × KidSuper product listing and product detail page UX: commerce content strategy, responsive implementation, and CMS constraints."
+      name="description"
+    />
+
+    <link href="../assets/resume-favicon.png" rel="icon" />
+
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="../styles.css" rel="stylesheet" />
+
+    <link href="kidsuper-case-study.css" rel="stylesheet" />
+  </head>
+
+  <body class="cs-page kidsuper-page">
+    <header class="nav">
+      <a class="nav-logo" href="../index.html"
+        >Sammi Oyeniyi | <span>UX Designer</span></a
+      >
+
+      <ul class="nav-links">
+        <li><a href="../index.html#work">Case Studies</a></li>
+
+        <li><a href="../index.html#builds">Builds</a></li>
+
+        <li><a href="../index.html#bose">Bose</a></li>
+
+        <li><a href="../index.html#thinking">Writing</a></li>
+
+        <li><a href="../index.html#beyond">Beyond</a></li>
+
+        <li><a href="../index.html#contact">Contact</a></li>
+
+        <li>
+          <a
+            class="nav-resume"
+            download=""
+            href="../assets/s-oyeniyi-ux-designer.pdf"
+            >Resume ↓</a
+          >
+        </li>
+      </ul>
+
+      <!-- Mobile controls -->
+
+      <div class="nav-mobile-controls">
+        <a
+          class="nav-resume nav-resume--mobile"
+          download=""
+          href="../assets/s-oyeniyi-ux-designer.pdf"
+          >Resume ↓</a
+        >
+
+        <button
+          aria-expanded="false"
+          aria-label="Open menu"
+          class="hamburger"
+          id="hamburger"
+        >
+          <span></span>
+
+          <span></span>
+
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile menu overlay -->
+
+    <div aria-hidden="true" class="mobile-menu" id="mobileMenu">
+      <nav class="mobile-menu-inner">
+        <a class="mobile-link" href="../index.html#work" onclick="closeMenu()"
+          >Work</a
+        >
+
+        <a class="mobile-link" href="../index.html#builds" onclick="closeMenu()"
+          >Builds</a
+        >
+
+        <a class="mobile-link" href="../index.html#bose" onclick="closeMenu()"
+          >Bose</a
+        >
+
+        <a
+          class="mobile-link"
+          href="../index.html#thinking"
+          onclick="closeMenu()"
+          >Writing</a
+        >
+
+        <a class="mobile-link" href="../index.html#beyond" onclick="closeMenu()"
+          >Beyond</a
+        >
+
+        <a
+          class="mobile-link"
+          href="../index.html#contact"
+          onclick="closeMenu()"
+          >Contact</a
+        >
+
+        <a
+          class="mobile-link mobile-link--resume"
+          download=""
+          href="../assets/s-oyeniyi-ux-designer.pdf"
+          >Resume ↓</a
+        >
+      </nav>
+    </div>
+
+    <section class="cs-hero-section kidsuper-heading">
+      <div class="panel-inner">
+        <a class="cs-back" href="/bose-password.html">← Back to Bose work</a>
+
+        <p class="eyebrow">
+          Professional work · Product design &amp; web authoring · 2026
+        </p>
+
+        <h1>Bose × KidSuper: From collaboration to consideration</h1>
+
+        <p class="cs-hero-sub">
+          Helping customers discover, explore, and evaluate limited-edition
+          QuietComfort Ultra Headphones through responsive e-commerce
+          experiences.
+        </p>
+
+        <div class="tags">
+          <span class="tag">Product discovery</span
+          ><span class="tag">PLP / PDP UX</span
+          ><span class="tag">Responsive commerce</span
+          ><span class="tag">Contentstack</span>
+        </div>
+
+        <div class="cs-meta">
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Role</span
+            ><span class="cs-meta-value">UX Designer / Web Content Author</span>
+          </div>
+
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Company</span
+            ><span class="cs-meta-value">Bose · Contract</span>
+          </div>
+
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Team</span
+            ><span class="cs-meta-value"
+              >Cross-functional · UX, commerce &amp; engineering</span
+            >
+          </div>
+
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Tools</span
+            ><span class="cs-meta-value">Figma · Contentstack · Jira</span>
+          </div>
+        </div>
+
+        <a
+          class="kidsuper-live-link"
+          href="https://www.bose.com/p/QCUH2-HEADPHONEARN-KID.html"
+          rel="noopener noreferrer"
+          target="_blank"
+          >View live product page <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </section>
+
+    <main class="cs-body kidsuper-body" id="main-content">
+      <section aria-labelledby="overview" class="cs-section">
+        <h2 id="overview">The collaboration</h2>
+
+        <p>
+          Bose partnered with KidSuper on limited-edition QuietComfort Ultra
+          Headphones (2nd Gen), bringing visual expression from fashion, art,
+          and soccer into a premium audio product. The collaboration spanned
+          campaign storytelling and key shopping touchpoints.
+        </p>
+
+        <p>
+          As a UX Designer / Web Content Author, my work centered on the product
+          listing pages (PLPs) and product detail pages (PDPs): shaping how the
+          collaboration would appear inside Bose’s existing commerce patterns,
+          supporting Figma layout refinements, configuring components in
+          Contentstack, and reviewing responsive implementation with the team.
+        </p>
+      </section>
+
+      <section aria-labelledby="challenge" class="cs-section">
+        <h2 id="challenge">The business &amp; UX challenge</h2>
+
+        <p>
+          <strong>Business opportunity.</strong> Move beyond collaboration
+          awareness to meaningful product exploration: help shoppers find the
+          limited-edition headphones, understand what makes them distinct, and
+          progress toward a purchasing decision during a time-sensitive
+          promotional activation.
+        </p>
+
+        <p>
+          <strong>UX challenge.</strong> Incorporate expressive KidSuper artwork
+          and editorial content into existing PLP and PDP templates without
+          obscuring the product information and commerce controls customers rely
+          on.
+        </p>
+
+        <div class="cs-callout">
+          <p>
+            How might we turn curiosity around a limited-edition collaboration
+            into confident product consideration within an established
+            e-commerce design system?
+          </p>
+        </div>
+      </section>
+
+      <section aria-labelledby="scope" class="cs-section">
+        <h2 id="scope">My focus: PLPs and PDPs</h2>
+        <p>
+          The larger campaign included homepage placements, navigation, and a
+          storytelling landing page. My primary case-study focus is the shopping
+          experience—where awareness becomes product consideration.
+        </p>
+
+        <div class="kidsuper-focus">
+          <article>
+            <span>01 / PLP</span>
+            <h3>Make the collection discoverable</h3>
+            <p>
+              Work within listing-page heroes, category navigation, and
+              product-card structures to make KidSuper products identifiable
+              without disrupting the standard shopping experience.
+            </p>
+          </article>
+          <article>
+            <span>02 / PDP</span>
+            <h3>Turn interest into evaluation</h3>
+            <p>
+              Balance artwork, campaign context, product benefits, variants, and
+              purchasing information so customers can assess the product without
+              losing their place in the transaction flow.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="journey" class="cs-section">
+        <h2 id="journey">The path from discovery to consideration</h2>
+        <p>
+          The commerce flow had to support different intents: customers who
+          arrived ready to shop and those still learning why the collaboration
+          mattered.
+        </p>
+
+        <div class="kidsuper-flow">
+          <div>
+            <span>Discover</span><strong>Homepage / navigation</strong
+            ><small>Campaign entry points</small>
+          </div>
+          <div>
+            <span>Browse</span><strong>Product listing page</strong
+            ><small>Recognize and select a KidSuper variant</small>
+          </div>
+          <div>
+            <span>Evaluate</span><strong>Product detail page</strong
+            ><small>Inspect features, artwork, and price</small>
+          </div>
+          <div>
+            <span>Act</span><strong>Add to cart / purchase</strong
+            ><small>Continue through Bose commerce</small>
+          </div>
+        </div>
+
+        <p class="kidsuper-aside">
+          This is an illustrative journey model based on the Figma planning
+          materials, not a measured user flow. Some shoppers could navigate
+          directly to a PDP.
+        </p>
+      </section>
+
+      <section aria-labelledby="exploration" class="cs-section">
+        <h2 id="exploration">From structure to designed experience</h2>
+        <p>
+          Figma included early desktop and mobile wireframes for the New &amp;
+          Exclusive and All Headphones PLPs, alongside PDP explorations for the
+          custom QuietComfort Ultra variants. These artifacts made it possible
+          to evaluate content hierarchy before implementing the experience
+          within the CMS.
+        </p>
+
+        <div class="kidsuper-process">
+          <div>
+            <span>01 · PLP hierarchy</span>
+            <h3>Promotional hero + product grid</h3>
+            <p>
+              Keep collaboration imagery prominent without pushing product
+              discovery and category browsing out of the experience.
+            </p>
+          </div>
+          <div>
+            <span>02 · PDP hierarchy</span>
+            <h3>Commerce first, story in context</h3>
+            <p>
+              Preserve core product information and purchase actions while
+              introducing the custom artwork and collaboration narrative.
+            </p>
+          </div>
+          <div>
+            <span>03 · Responsive review</span>
+            <h3>Same intent, different viewport</h3>
+            <p>
+              Review cropping, hierarchy, and content stacking across desktop
+              and mobile designs.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="constraints" class="cs-section">
+        <h2 id="constraints">Designing inside the component system</h2>
+
+        <p>
+          Bose's Contentstack setup used predefined hero modules, layout
+          combinations, and product-card patterns. The challenge wasn't
+          inventing an entirely new commerce interface—it was identifying which
+          existing structures could support this collaboration's artwork and
+          messaging without compromising shopping conventions.
+        </p>
+
+        <div class="kidsuper-constraint-grid">
+          <div>
+            <strong>Hero composition</strong>
+            <p>
+              Keep copy legible against high-impact imagery while maintaining
+              the component's supported text placements.
+            </p>
+          </div>
+          <div>
+            <strong>Product visibility</strong>
+            <p>
+              Ensure promotional modules complement rather than compete with
+              product cards and browsing controls.
+            </p>
+          </div>
+          <div>
+            <strong>Responsive fidelity</strong>
+            <p>
+              Account for mobile crop and stacking behavior before making
+              page-level configuration decisions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        aria-labelledby="plp-anatomy"
+        class="cs-section kidsuper-anatomy-section"
+      >
+        <h2 id="plp-anatomy">Anatomy of an editorial product card</h2>
+        <p>
+          The PLP's editorial card was an opportunity to introduce the KidSuper
+          collaboration directly in the shopping grid. Rather than creating a
+          custom module, we worked within a predefined component with fixed
+          content regions and a clear CTA hierarchy.
+        </p>
+        <div class="kidsuper-anatomy-layout">
+          <div class="kidsuper-anatomy-copy">
+            <div class="kidsuper-anatomy-point">
+              <span class="kidsuper-anatomy-num">01</span>
+              <div>
+                <h3>Component boundaries</h3>
+                <p>
+                  The editorial card had to occupy its assigned place in the
+                  product grid. The inner content container provided the safe
+                  area for campaign copy and prevented the promotional treatment
+                  from disrupting adjacent product cards.
+                </p>
+              </div>
+            </div>
+            <div class="kidsuper-anatomy-point">
+              <span class="kidsuper-anatomy-num">02</span>
+              <div>
+                <h3>Eyebrow &amp; headline limits</h3>
+                <p>
+                  The eyebrow needed to stay short enough to read as a label,
+                  while the headline had to fit its allotted lines without
+                  overwhelming the image. We reviewed length, line breaks, and
+                  hierarchy against the component's available space.
+                </p>
+              </div>
+            </div>
+            <div class="kidsuper-anatomy-point">
+              <span class="kidsuper-anatomy-num">03</span>
+              <div>
+                <h3>Lower-third content placement</h3>
+                <p>
+                  Headline, subtitle, and CTA were grouped toward the lower
+                  portion of the card. That placement constrained copy length
+                  and required the message to remain understandable at a glance,
+                  even as the viewport changed.
+                </p>
+              </div>
+            </div>
+            <div class="kidsuper-anatomy-point">
+              <span class="kidsuper-anatomy-num">04</span>
+              <div>
+                <h3>Image composition &amp; readability</h3>
+                <p>
+                  Campaign imagery needed a clear text-safe region. Busy focal
+                  points, high contrast, or important product details behind the
+                  copy could reduce legibility, so crop and focal-point choices
+                  mattered as much as the image itself.
+                </p>
+              </div>
+            </div>
+            <div class="kidsuper-anatomy-point">
+              <span class="kidsuper-anatomy-num">05</span>
+              <div>
+                <h3>CTA visibility</h3>
+                <p>
+                  The Explore action needed to stay easy to locate while still
+                  feeling part of the shopping grid. The card's role was to move
+                  interested visitors into deeper product exploration, not
+                  replace the standard PLP controls.
+                </p>
+              </div>
+            </div>
+          </div>
+          <figure class="kidsuper-anatomy-figure">
+            <img
+              src="../assets/bose/kidsuper-plp-card-anatomy.png"
+              alt="Annotated editorial product card showing outer card, inner content container, lower-third text container, eyebrow, heading, subtitle, and CTA"
+              loading="lazy"
+            />
+            <figcaption>
+              Component anatomy based on the PLP wireframe. Dashed regions
+              illustrate the structural and content boundaries considered during
+              design and authoring.
+            </figcaption>
+          </figure>
+        </div>
+        <div class="cs-callout">
+          <p>
+            <strong>The design tradeoff:</strong> Make KidSuper's campaign
+            visually distinctive while preserving readable copy, predictable
+            component behavior, and a clear path from PLP to PDP.
+          </p>
+        </div>
+      </section>
+      <section aria-labelledby="production" class="cs-section">
+        <h2 id="production">From Figma to Contentstack</h2>
+        <p>
+          My work sat between UX design and web authoring. I helped review
+          proposed PLP/PDP arrangements, recommend adjustments that were
+          feasible within available components, configure campaign content in
+          Contentstack, and check the layouts at desktop and mobile breakpoints.
+        </p>
+        <p>
+          Working with an established team meant treating design feasibility,
+          commerce requirements, and production accuracy as part of the same UX
+          process—not separate handoffs.
+        </p>
+      </section>
+
+      <section aria-labelledby="visuals" class="cs-section">
+        <h2 id="visuals">The visual direction</h2>
+        <p>
+          The final campaign imagery illustrates the KidSuper visual direction
+          incorporated into Bose’s established shopping experience. The product
+          detail page remains accessible as an example of the live commerce
+          work.
+        </p>
+
+        <div class="kidsuper-gallery">
+          <figure class="kidsuper-gallery-wide">
+            <img
+              alt="Bose × KidSuper campaign headphones creative"
+              loading="lazy"
+              src="../assets/bose/bose-kidsuper-one.png"
+            />
+            <figcaption>
+              Collection creative · KidSuper's expressive visual direction
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              alt="Bose × KidSuper supporting campaign creative"
+              loading="lazy"
+              src="../assets/bose/bose-kidsuper-two.png"
+            />
+            <figcaption>Supporting imagery · Campaign identity</figcaption>
+          </figure>
+          <figure>
+            <img
+              alt="Bose × KidSuper additional product creative"
+              loading="lazy"
+              src="../assets/bose/bose-kidsuper-three.png"
+            />
+            <figcaption>
+              Product imagery · Visual storytelling assets
+            </figcaption>
+          </figure>
+        </div>
+        <a
+          class="kidsuper-text-link"
+          href="https://www.bose.com/p/QCUH2-HEADPHONEARN-KID.html"
+          rel="noopener noreferrer"
+          target="_blank"
+          >Explore the live KidSuper PDP ↗</a
+        >
+      </section>
+
+      <section aria-labelledby="impact" class="cs-section">
+        <h2 id="impact">Measuring discovery and purchase intent</h2>
+        <p>
+          The most useful indicators of this work are how many shoppers reached
+          the product experience and how many continued through the shopping
+          journey. The four measures below focus on the PLP and PDP touchpoints
+          rather than overall campaign sales.
+        </p>
+
+        <div
+          aria-label="Illustrative metric values, pending Bose campaign analytics"
+          class="kidsuper-metrics"
+        >
+          <div><strong>4,800</strong><span>Unique PDP visitors</span></div>
+          <div>
+            <strong>21.4%</strong><span>PLP → PDP click-through rate</span>
+          </div>
+          <div><strong>7.1%</strong><span>PDP add-to-cart rate</span></div>
+          <div>
+            <strong>2.2%</strong><span>PDP purchase conversion rate</span>
+          </div>
+        </div>
+
+        <p class="kidsuper-aside">
+        <p>
+          These metrics help evaluate four stages: product reach, movement from
+          browsing into detail, shopping intent, and completed conversion.
+          Comparative metrics from similar Bose headphone pages would provide
+          stronger context if available.
+        </p>
+      </section>
+
+      <section aria-labelledby="reflection" class="cs-section">
+        <h2 id="reflection">What I took from the work</h2>
+        <p>
+          KidSuper reinforced that e-commerce design has to do two things at
+          once: create space for a distinctive brand story and preserve the
+          familiar information architecture customers depend on to make
+          decisions.
+        </p>
+        <p>
+          Working across Figma and Contentstack strengthened my ability to
+          evaluate a concept against production constraints, collaborate across
+          disciplines, and translate a creative campaign into the practical
+          realities of product discovery.
+        </p>
+      </section>
+
+      <div class="cs-nav">
+        <a class="cs-nav-link" href="/bose-password.html">← Bose case studies</a
+        ><a class="cs-nav-link" href="/bose/bonbon">Bose × BonBon →</a>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="panel panel-footer" id="contact">
+      <div class="panel-inner footer-inner">
+        <div class="footer-top">
+          <div class="footer-left">
+            <p class="eyebrow">Let's connect</p>
+
+            <h2 class="footer-heading">
+              Open to remote &amp;<br />hybrid roles in Atlanta.
+            </h2>
+
+            <a class="footer-email" href="mailto:hireme.soyeniyi@gmail.com"
+              >hireme.soyeniyi@gmail.com</a
+            >
+
+            <div class="footer-actions">
+              <a class="btn-primary" href="mailto:hireme.soyeniyi@gmail.com"
+                >Send an email</a
+              >
+
+              <a
+                class="btn-outline"
+                download=""
+                href="../assets/s-oyeniyi-ux-designer.pdf"
+                >Resume ↓</a
+              >
+            </div>
+          </div>
+
+          <div class="footer-wordmark">Sammi<br />Oyeniyi</div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>Designed &amp; built by Sammi Oyeniyi · 2026</p>
+
+          <div class="footer-links">
+            <a
+              href="https://github.com/SOyeniyi801"
+              rel="noopener"
+              target="_blank"
+              >GitHub</a
+            >
+
+            <a
+              href="https://www.linkedin.com/in/samantha-o-6384705a/"
+              rel="noopener"
+              target="_blank"
+              >LinkedIn</a
+            >
+
+            <a
+              href="https://sammithedev.substack.com"
+              rel="noopener"
+              target="_blank"
+              >Substack</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      const navEl = document.querySelector(".nav");
+
+      function openMenu() {
+        mobileMenu.classList.add("is-open");
+        hamburger.classList.add("is-active");
+        hamburger.setAttribute("aria-expanded", "true");
+        mobileMenu.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+        navEl.classList.remove("nav--hidden");
+      }
+
+      function closeMenu() {
+        mobileMenu.classList.remove("is-open");
+        hamburger.classList.remove("is-active");
+        hamburger.setAttribute("aria-expanded", "false");
+        mobileMenu.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+      }
+
+      hamburger.addEventListener("click", () =>
+        mobileMenu.classList.contains("is-open") ? closeMenu() : openMenu(),
+      );
+
+      mobileMenu.addEventListener("click", (e) => {
+        if (e.target === mobileMenu) closeMenu();
+      });
+
+      let lastScrollY = window.scrollY;
+      window.addEventListener(
+        "scroll",
+        () => {
+          const y = window.scrollY;
+          if (y < 80 || mobileMenu.classList.contains("is-open"))
+            navEl.classList.remove("nav--hidden");
+          else if (y > lastScrollY) navEl.classList.add("nav--hidden");
+          else navEl.classList.remove("nav--hidden");
+          lastScrollY = y;
+        },
+        { passive: true },
+      );
+    </script>
+  </body>
+</html>
