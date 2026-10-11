@@ -630,6 +630,11 @@
     color: var(--charcoal);
     line-height: 1.5;
   }
+
+  .photo {
+    text-decoration: underline;
+    color: #B03A2B;
+  }
   
   /* ============================================
      FOOTER / CONTACT
